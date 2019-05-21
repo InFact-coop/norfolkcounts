@@ -29,6 +29,7 @@ $sage_includes = [
   'functions/render-partial.php'
 ];
 
+
 include_files($sage_includes);
 
 function include_files($files){

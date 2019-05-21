@@ -39,12 +39,12 @@ $stories = get_all_stories(); ?>
         <a href="#" class="btn-action light" data-log-ga
         data-ga-category="live-in-leeds-button"
         data-ga-action="click"
-        data-ga-label="Yes - Lives in Leeds"
+        data-ga-label="Yes - Lives in Norfolk"
         data-go-step="2">Yes</a>
         <a href="#" class="btn-action light" data-log-ga
         data-ga-category="not-in-leeds-button"
         data-ga-action="click"
-        data-ga-label="No - doesn't live in Leeds"
+        data-ga-label="No - doesn't live in Norfolk"
         data-go-step="1-no">No</a>
 
       </div>
