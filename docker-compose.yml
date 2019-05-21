@@ -1,0 +1,29 @@
+---
+version: "3"
+
+services:
+  db:
+    # latest stable
+    image: mariadb:10.1
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
+    volumes:
+      - "db:/var/lib/mysql"
+    ports:
+      - "8006:3306"
+
+  wp:
+    # latest wordpress
+    image: wordpress:4.9.8-apache
+    environment:
+      WORDPRESS_DB_PASSWORD: mypass
+    links:
+      - "db:mysql"
+    ports:
+      - "8005:80"
+    volumes:
+      - ${PWD:-.}/wp-content:/var/www/html/wp-content
+      - ${PWD:-.}/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+
+volumes:
+  db: {}

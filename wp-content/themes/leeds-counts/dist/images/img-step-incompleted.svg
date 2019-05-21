@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="18px" viewBox="0 0 174 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="step1" transform="translate(-634.000000, -172.000000)">
+            <g id="Group-2" transform="translate(540.000000, 134.000000)">
+                <g id="Group-3" transform="translate(94.000000, 38.000000)">
+                    <polygon id="Progress-Line" fill="#FF4E4E" points="12.3771429 7.33333333 12.8771429 7.33333333 12.8771429 10.2424242 12.3771429 10.2424242"></polygon>
+                    <polygon id="Line" fill="#FF4100" points="5.25142857 7.33333333 171.811429 7.33333333 171.811429 10.2424242 5.25142857 10.2424242"></polygon>
+                    <ellipse id="Oval-4" stroke="#FF4100" stroke-width="2" fill="#FFFFFF" cx="166.791188" cy="9.00813692" rx="6.04259579" ry="6.00813692"></ellipse>
+                    <ellipse id="Oval-1" fill="#FF4100" cx="8.20173735" cy="8.51420455" rx="8.20173735" ry="8.51420455"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
