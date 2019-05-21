@@ -37,12 +37,12 @@ $stories = get_all_stories(); ?>
         <p><?=$fields['step_1']['step_1_text'];?></p>
 
         <a href="#" class="btn-action light" data-log-ga
-        data-ga-category="live-in-leeds-button"
+        data-ga-category="live-in-norfolk-button"
         data-ga-action="click"
         data-ga-label="Yes - Lives in Norfolk"
         data-go-step="2">Yes</a>
         <a href="#" class="btn-action light" data-log-ga
-        data-ga-category="not-in-leeds-button"
+        data-ga-category="not-in-norfolk-button"
         data-ga-action="click"
         data-ga-label="No - doesn't live in Norfolk"
         data-go-step="1-no">No</a>
@@ -70,9 +70,9 @@ $stories = get_all_stories(); ?>
           target="_blank"><?=$fields['step_1']['no_answer_link']['title'];?></a><br />And, if you need yet another reason...</p>
 
         <a href="#" class="btn-action light large" data-log-ga
-        data-ga-category="leeds-is-proud"
+        data-ga-category="norfolk-is-proud"
         data-ga-action="click"
-        data-ga-label="Clicked 'why leeds is proud'"
+        data-ga-label="Clicked 'why norfolk is proud'"
         data-go-step="2"><?=$fields['step_1']['no_answer_cta'];?></a>
 
       </div>

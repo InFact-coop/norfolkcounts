@@ -1,4 +1,4 @@
-<?php namespace leeds;
+<?php namespace norfolk;
 
 
 /*
@@ -23,7 +23,7 @@ function register_menus() {
 }
 
 
-add_action( 'init', 'leeds\register_menus' );
+add_action( 'init', 'norfolk\register_menus' );
 
 
 

@@ -1,4 +1,4 @@
-<?php namespace leeds;
+<?php namespace norfolk;
 
 
 /*
@@ -17,5 +17,5 @@ function load_custom_wp_admin_style() {
 }
 
 
-add_action( 'admin_enqueue_scripts', 'leeds\load_custom_wp_admin_style' );
+add_action( 'admin_enqueue_scripts', 'norfolk\load_custom_wp_admin_style' );
 

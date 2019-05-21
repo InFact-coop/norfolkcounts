@@ -12,7 +12,7 @@ Custom WP theme, built with SASS, Uglify, Coffeescript, etc via webpack.
 - Set up the compile pipeline
 
 ```
-cd wp-content/themes/leeds/
+cd wp-content/themes/norfolk/
 yarn install
 ```
 
@@ -35,7 +35,7 @@ docker-compose up
 - Start gulp compilation watch mode
 
 ```
-cd wp-content/themes/leeds/
+cd wp-content/themes/norfolk/
 yarn run dev
 ```
 

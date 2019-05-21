@@ -8,7 +8,7 @@ import '../scss/app.scss'
 
 class Theme
   constructor: ()->
-    @AJAX_URL = "/wp-content/themes/leeds-counts/ajax/admin-ajax.php"
+    @AJAX_URL = "/wp-content/themes/norfolk-counts/ajax/admin-ajax.php"
     @stories_viewed = [] # This tracks the stories we have viewed in both carousel and via ajax
     @messages = $('.loading-message .messages p') # used by the pre-loader
     $(document).ready @init
