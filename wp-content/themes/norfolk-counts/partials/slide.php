@@ -50,7 +50,7 @@ $fields = get_fields($post->ID); ?>
           <div class="help-box" data-fade-in-up data-fadein>
             <i class="icon print"></i>
             <span class="headline">Spread The Word</span>
-            <p>Help your friends and family discover the ways that Leeds is making a difference across the world</p>
+            <p>Help your friends and family discover the ways that Norfolk is making a difference across the world</p>
 
             <div class="share-buttons">
               <?php wp_reset_postdata(); ?>
@@ -86,7 +86,7 @@ $fields = get_fields($post->ID); ?>
           <div class="help-box" data-fade-in-up data-fadein>
             <i class="icon pencil"></i>
             <span class="headline">Write To Your MP</span>
-            <p>Let them know why you’re proud of Leeds’ contribution to UK aid and why you want it protected. <a data-open="mpModal">Read here what you should tell them.</a></p>
+            <p>Let them know why you’re proud of Norfolk’s contribution to UK aid and why you want it protected. <a data-open="mpModal">Read here what you should tell them.</a></p>
 
             <div class="share-buttons text-left">
               <a href="https://www.writetothem.com/?gclid=EAIaIQobChMIl_jxgvGe3gIVg7TtCh1icQc9EAAYASAAEgKjQPD_BwE" class="btn-action" target="_blank" data-log-ga
@@ -112,7 +112,7 @@ $fields = get_fields($post->ID); ?>
           <div class="help-box" data-fade-in-up data-fadein>
             <i class="icon conversation"></i>
             <span class="headline">Start a Conversation</span>
-            <p>Download these Leeds Counts posters to start conversations in your school, workplace or community</p>
+            <p>Download these Norfolk Counts posters to start conversations in your school, workplace or community</p>
 
             <div class="share-buttons text-left">
               <a href="<?= $download_url; ?>" class="btn-action" data-log-ga
@@ -131,7 +131,7 @@ $fields = get_fields($post->ID); ?>
           <div class="help-box" data-fade-in-up data-fadein>
             <i class="icon group"></i>
             <span class="headline">Join A Local Group</span>
-            <p>Join other like-minded folks in Leeds who want to stand up for impact of UK aid</p>
+            <p>Join other like-minded folks in Norfolk who want to stand up for impact of UK aid</p>
 
             <div class="share-buttons text-left">
               <a href="https://www.facebook.com/groups/350244305544216/" class="btn-action" target="_blank" data-log-ga
@@ -153,7 +153,7 @@ $fields = get_fields($post->ID); ?>
             <a data-open="impactModal" data-log-ga
             data-ga-category="impact-button"
             data-ga-action="click"
-            data-ga-label="How we know Leeds' impact">How we know Leeds’ impact?</a>
+            data-ga-label="How we know Norfolk's impact">How we know Norfolk’s impact?</a>
           </div>
 
         </div>

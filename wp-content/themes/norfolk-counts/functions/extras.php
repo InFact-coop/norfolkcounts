@@ -10,7 +10,7 @@
 if( !defined("WP_ENV") ){
 
   switch($_SERVER['HTTP_HOST']){
-    case "leedscounts.org.uk":
+    case "norfolkcounts.org.uk":
       define("WP_ENV","production");
     break;
     default:
