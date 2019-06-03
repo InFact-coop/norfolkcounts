@@ -1,0 +1,23 @@
+
+// Forms
+
+input, 
+select,
+textarea {
+
+	&.radius {
+		border-radius: 4px;
+	}
+
+	&.no-shadow {
+		box-shadow: none;
+	}
+
+	&::placeholder {
+	
+	}
+}
+
+input[type=text] {
+
+}
