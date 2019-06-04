@@ -17,3 +17,17 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+
+node_modules/
+
+twentyfifteen/
+twentysixteen/
+twentyseventeen/
+twentyeighteen/
+twentynineteen/
+
+dist/
+leeds-counts/dist
+plugins/
+wp-content/index.php
+wp-content/themes/index.php
