@@ -50,7 +50,7 @@
       width: 140px;
       height: 140px;
       position: relative;
-      background: url('../images/ico-thunder.svg') center center no-repeat;
+      background: url("../images/ico-thunder.svg") center center no-repeat;
 
       &:before {
         content: "";
@@ -67,12 +67,12 @@
     }
 
     @-webkit-keyframes rotation {
-    	from {
-    		-webkit-transform: rotate(0deg);
-    	}
-    	to {
-    		-webkit-transform: rotate(359deg);
-    	}
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(359deg);
+      }
     }
   }
 }

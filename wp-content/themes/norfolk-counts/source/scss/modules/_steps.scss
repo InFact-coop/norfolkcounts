@@ -19,7 +19,7 @@
       transform: translateY(0);
       top: 110px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         top: 50%;
         transform: translateY(-50%);
       }
@@ -31,7 +31,7 @@
       margin: 0 auto;
       margin-bottom: 40px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         max-width: 100%;
       }
     }
@@ -45,18 +45,18 @@
       color: color(red);
       margin-bottom: 30px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         margin-bottom: 70px;
       }
 
       &.incomplete {
         &:after {
-          background-image: url('../images/img-step-incompleted.svg');
+          background-image: url("../images/img-step-incompleted.svg");
         }
       }
       &.complete {
         &:after {
-          background-image: url('../images/img-step-completed.svg');
+          background-image: url("../images/img-step-completed.svg");
         }
       }
 
@@ -81,7 +81,7 @@
       letter-spacing: -0.34px;
       margin-bottom: 20px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 80px;
         line-height: 70px;
       }
@@ -95,7 +95,7 @@
       letter-spacing: -0.34px;
       margin-bottom: 20px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 50px;
         line-height: 56px;
       }
@@ -108,7 +108,7 @@
       color: #000000;
       letter-spacing: 0;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 24px;
         line-height: 35px;
       }
@@ -167,7 +167,7 @@
       margin-right: 5px;
       border-radius: 40px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         height: 80px;
         line-height: 80px;
         padding: 0 50px;
@@ -203,7 +203,7 @@
         letter-spacing: 0px;
         min-width: 100px;
 
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
           font-size: 22px;
         }
 
