@@ -4177,7 +4177,7 @@ header .share {
   height: 60px;
   line-height: 60px;
   border-radius: 40px;
-  background: #ff4100;
+  background: #daa900;
   -webkit-box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
           box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
   padding: 0;
@@ -4203,7 +4203,7 @@ header .share {
   font-family: 'Canela-Light';
   font-size: 18px;
   line-height: 30px;
-  color: #ff4100;
+  color: #daa900;
   letter-spacing: 0;
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzNweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzMgMzIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjIgKDY3MTQ1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Hcm91cCA0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+CiAgICAgICAgPGcgaWQ9InBvcHVwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTk4LjAwMDAwMCwgLTE1Ny4wMDAwMDApIiBzdHJva2U9IiNGRjQxMDAiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAwLjAwMDAwMCwgMTU4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAsMC41IEwyOSwyOS41IiBpZD0iTGluZS0yIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwwLjUgTDI5LDI5LjUiIGlkPSJMaW5lLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0LjUwMDAwMCwgMTUuMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0xNC41MDAwMDAsIC0xNS4wMDAwMDApICI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=") right center no-repeat;
   background-size: 30px;
@@ -4276,11 +4276,11 @@ header .share {
 }
 
 .steps-container .step .progress.incomplete:after {
-  background-image: url(../images/img-step-incompleted.svg);
+  background-image: url(../images/img-step-incomplete.svg);
 }
 
 .steps-container .step .progress.complete:after {
-  background-image: url(../images/img-step-completed.svg);
+  background-image: url(../images/img-step-complete.svg);
 }
 
 .steps-container .step .progress:after {
@@ -4421,7 +4421,7 @@ header .share {
 
 .steps-container .step .btn-action.active {
   background-color: #daa900;
-  color: #ffe5e1;
+  color: #fff;
 }
 
 .steps-container .step .btn-action.uppercase {
@@ -4454,7 +4454,7 @@ header .share {
 .steps-container .step .btn-action:active,
 .steps-container .step .btn-action:focus {
   background-color: #daa900;
-  color: #ffe5e1;
+  color: white;
 }
 
 .transition-container {
@@ -4831,7 +4831,7 @@ header .share {
   height: 60px;
   line-height: 60px;
   border-radius: 40px;
-  background: #ff4100;
+  background: #daa900;
   -webkit-box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
           box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
   padding: 0 20px;
@@ -5206,7 +5206,7 @@ header .share {
   height: 40px;
   line-height: 40px;
   border-radius: 40px;
-  background: #ff4100;
+  background: #daa900;
   padding: 0;
   font-family: 'Canela-Regular';
   font-size: 16px;

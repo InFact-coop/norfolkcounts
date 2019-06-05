@@ -53,12 +53,12 @@
 
       &.incomplete {
         &:after {
-          background-image: url("../images/img-step-incompleted.svg");
+          background-image: url("../images/img-step-incomplete.svg");
         }
       }
       &.complete {
         &:after {
-          background-image: url("../images/img-step-completed.svg");
+          background-image: url("../images/img-step-complete.svg");
         }
       }
 
@@ -192,7 +192,7 @@
 
       &.active {
         background-color: color(yellow);
-        color: color(red-light);
+        color: #fff;
       }
 
       &.uppercase {
@@ -223,7 +223,7 @@
       &:active,
       &:focus {
         background-color: color(yellow);
-        color: color(red-light);
+        color: white;
       }
     }
   }
