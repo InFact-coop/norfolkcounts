@@ -1,4 +1,3 @@
-
 // Typography
 
 body {
@@ -16,18 +15,17 @@ body {
   }
 }
 
-
 .tag {
   display: block;
   @include font-family(Montserrat);
   font-size: 15px;
   line-height: 24px;
-  color: color(red);
+  color: color(yellow);
   letter-spacing: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
 
-  @include breakpoint(large){
+  @include breakpoint(large) {
     font-size: 17px;
     line-height: 28px;
   }
@@ -42,7 +40,7 @@ body {
   letter-spacing: 0;
   max-width: 90%;
 
-  @include breakpoint(xlarge){
+  @include breakpoint(xlarge) {
     font-size: 55px;
     line-height: 61px;
   }

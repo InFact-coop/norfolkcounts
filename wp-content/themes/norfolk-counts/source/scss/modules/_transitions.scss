@@ -34,7 +34,7 @@
       @include font-family(PostGroteskBook);
       font-size: 24px;
       line-height: 30px;
-      color: color(red);
+      color: color(yellow);
       letter-spacing: 0;
       text-align: center;
 
@@ -50,16 +50,16 @@
       width: 140px;
       height: 140px;
       position: relative;
-      background: url('../images/ico-thunder.svg') center center no-repeat;
+      background: url("../images/ico-thunder.svg") center center no-repeat;
 
       &:before {
         content: "";
         display: block;
         height: 100%;
         width: 100%;
-        border-left: 2px solid color(red);
-        border-top: 2px solid color(red);
-        border-bottom: 2px solid color(red);
+        border-left: 2px solid color(yellow);
+        border-top: 2px solid color(yellow);
+        border-bottom: 2px solid color(yellow);
         border-right: 2px solid transparent;
         border-radius: 50%;
         -webkit-animation: rotation 2s infinite linear;
@@ -67,12 +67,12 @@
     }
 
     @-webkit-keyframes rotation {
-    	from {
-    		-webkit-transform: rotate(0deg);
-    	}
-    	to {
-    		-webkit-transform: rotate(359deg);
-    	}
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(359deg);
+      }
     }
   }
 }

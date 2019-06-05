@@ -11,7 +11,7 @@
     margin-bottom: 40px;
     text-align: center;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       font-size: 80px;
       line-height: 70px;
     }
@@ -25,7 +25,7 @@
     letter-spacing: 0;
     margin-bottom: 30px;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       font-size: 28px;
       line-height: 36px;
     }
@@ -35,17 +35,17 @@
       margin-top: 50px;
       @include font-family(CanelaRegular);
       font-size: 20px;
-      color: color(red);
+      color: color(yellow);
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 26px;
         margin-top: 100px;
       }
 
       a {
-        color: color(red);
+        color: color(yellow);
 
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
           padding: 0 20px;
         }
 
@@ -61,7 +61,7 @@
     max-width: 600px;
     margin: 0 auto;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       margin-top: 20px;
       margin-bottom: 50px;
     }
@@ -71,7 +71,7 @@
     margin-bottom: 40px;
     text-align: center;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       margin-bottom: 50px;
     }
 
@@ -80,7 +80,7 @@
       line-height: 26px;
       margin-bottom: 20px;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 20px;
         line-height: 32px;
         max-width: 340px;
@@ -91,11 +91,11 @@
         @include font-family(CanelaBold);
         font-size: 60px;
         line-height: 1;
-        color: color(red);
+        color: color(yellow);
         margin: 10px 0 0 0;
         letter-spacing: -0.34px;
 
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
           font-size: 80px;
         }
       }
@@ -112,16 +112,16 @@
     background-size: contain;
 
     &.spread {
-      background-image: url('../images/ico-print-poster.svg');
+      background-image: url("../images/ico-print-poster.svg");
     }
     &.pencil {
-      background-image: url('../images/ico-pencil.svg');
+      background-image: url("../images/ico-pencil.svg");
     }
     &.conversation {
-      background-image: url('../images/ico-conversation.svg');
+      background-image: url("../images/ico-conversation.svg");
     }
     &.group {
-      background-image: url('../images/ico-group.svg');
+      background-image: url("../images/ico-group.svg");
     }
   }
 
@@ -131,21 +131,21 @@
     height: 40px;
     line-height: 40px;
     border-radius: 40px;
-    background: #FF4100;
+    background: #ff4100;
     padding: 0;
     @include font-family(CanelaRegular);
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0;
     width: 100%;
     text-align: center;
 
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
       padding: 0 30px;
       width: auto;
     }
 
-    @include breakpoint(large){
+    @include breakpoint(large) {
       height: 50px;
       line-height: 54px;
       font-size: 20px;

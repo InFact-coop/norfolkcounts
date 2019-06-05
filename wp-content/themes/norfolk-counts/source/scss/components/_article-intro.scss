@@ -1,5 +1,4 @@
 .article-introduction {
-
   .article-content {
     padding-top: 50px;
     max-width: 450px;
@@ -17,14 +16,14 @@
       color: #000000;
       letter-spacing: 0;
 
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         font-size: 18px;
         line-height: 28px;
       }
 
       .intro {
         @include font-family(Montserrat);
-        color: color(red);
+        color: color(yellow);
         text-transform: uppercase;
       }
     }
@@ -39,7 +38,7 @@
     }
 
     img {
-      box-shadow: 0 11px 50px 0 rgba(0,0,0,0.13);
+      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
     }
 
     figcaption {
@@ -54,5 +53,4 @@
       text-align: right;
     }
   }
-
 }
