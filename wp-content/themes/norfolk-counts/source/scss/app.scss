@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui.scss';
+@import "settings";
+@import "foundation";
+@import "motion-ui.scss";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -53,7 +53,6 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
 
 // Custom Theme components
 @import "slick.scss";

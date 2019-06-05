@@ -1,23 +1,19 @@
-
 // Forms
 
-input, 
+input,
 select,
 textarea {
+  &.radius {
+    border-radius: 4px;
+  }
 
-	&.radius {
-		border-radius: 4px;
-	}
+  &.no-shadow {
+    box-shadow: none;
+  }
 
-	&.no-shadow {
-		box-shadow: none;
-	}
-
-	&::placeholder {
-	
-	}
+  &::placeholder {
+  }
 }
 
-input[type=text] {
-
+input[type="text"] {
 }
