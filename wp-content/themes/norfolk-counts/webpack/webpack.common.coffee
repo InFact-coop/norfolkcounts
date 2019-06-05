@@ -16,7 +16,7 @@ module.exports = (options)->
   module:
     rules: [
       {
-        test: /\.(woff2?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/
+        test: /\.(woff2?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/
         use: [{
           loader: 'file-loader'
           options: {

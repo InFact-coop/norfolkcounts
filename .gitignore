@@ -19,4 +19,8 @@ wp-content/plugins/hello.php
 
 .vscode
 
-node_modules
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+node_modules/
+wp-content/themes/norfolk-counts/dist/
