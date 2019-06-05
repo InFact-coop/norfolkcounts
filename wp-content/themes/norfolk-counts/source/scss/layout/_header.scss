@@ -23,7 +23,14 @@ header {
     line-height: 26px;
     color: color(yellow);
     letter-spacing: 0;
-    padding-bottom: 1px;
-    border-bottom: 1px solid color(yellow);
+    background: url("../images/share-fb-mobile.svg") 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+
+    @include breakpoint(medium) {
+      background: url("../images/share-fb-desktop.svg") 0 0 no-repeat;
+      width: 170px;
+      height: 27px;
+    }
   }
 }

@@ -13,7 +13,7 @@
       data-ga-label="Share with friends<?= is_page('action') ? " Action Page" : "" ; ?>"
       data-fb-event="<?= is_page('action') ? "TakeAction" : "CompleteAction" ; ?>"
       data-fb-event-name="Share with friends<?= is_page('action') ? " Action Page" : "" ; ?>"
-      data-link-out="<?=facebook_link();?>">Share with friends</a>
+      data-link-out="<?=facebook_link();?>"></a>
 
     </div>
   </div>
