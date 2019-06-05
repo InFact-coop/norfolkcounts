@@ -8,7 +8,7 @@ $stories = get_all_stories(); ?>
     <div class="row">
       <div class="small-12 columns text-center">
 
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/img-house.svg" alt="" class="img-house">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/img-windmill.svg" alt="" class="img-house">
         <h1><?= get_bloginfo('name'); ?></h1>
         <?php the_content(); ?>
 
