@@ -1,15 +1,14 @@
-
 // Colors
 
 $colors: (
-	primary: #33576C,
-	neutral-light: #FFFFFF,
-	neutral-grey: #B2AEA3,
-	neutral-dark: #000000,
-	links: #F2696E,
-	red: #FF4100,
-	red-light: #FFE5E1,
-	red-dark: #C83300
+  primary: #33576c,
+  neutral-light: #ffffff,
+  neutral-grey: #b2aea3,
+  neutral-dark: #000000,
+  links: #f2696e,
+  red: #ff4100,
+  red-light: #ffe5e1,
+  red-dark: #c83300,
 );
 
 @function color($key) {
