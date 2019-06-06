@@ -1,14 +1,20 @@
 <div id="acf-upgrade-wrap" class="wrap">
 	
-	<h1><?php _e("Advanced Custom Fields Database Upgrade",'acf'); ?></h1>
+	<h1><?php _e("Advanced Custom Fields Database Upgrade", 'acf'); ?></h1>
 	
-<?php if( $updates ): ?>
+<?php if ($updates): ?>
 	
 	<p><?php _e('Reading upgrade tasks...', 'acf'); ?></p>
 	
-	<p class="show-on-ajax"><i class="acf-loading"></i> <?php printf(__('Upgrading data to version %s', 'acf'), $plugin_version); ?></p>
+	<p class="show-on-ajax"><i class="acf-loading"></i> <?php printf(
+   __('Upgrading data to version %s', 'acf'),
+   $plugin_version
+ ); ?></p>
 	
-	<p class="show-on-complete"><?php echo sprintf( __('Database Upgrade complete. <a href="%s">See what\'s new</a>', 'acf' ), admin_url('edit.php?post_type=acf-field-group&page=acf-settings-info') ); ?></p>
+	<p class="show-on-complete"><?php echo sprintf(
+   __('Database Upgrade complete. <a href="%s">See what\'s new</a>', 'acf'),
+   admin_url('edit.php?post_type=acf-field-group&page=acf-settings-info')
+ ); ?></p>
 
 	<style type="text/css">
 		

@@ -8,17 +8,16 @@
 */
 global $post;
 setup_postdata($post);
-$fields = get_fields($post->ID); ?>
+$fields = get_fields($post->ID);
+?>
 
 <!-- Slide -->
-<div class="slide story-<?=$post->ID;?>" data-story-id="<?=$post->ID;?>" >
+<div class="slide story-<?= $post->ID ?>" data-story-id="<?= $post->ID ?>" >
 
   <!-- Slide Header -->
   <div class="slide-article-header">
 
-    <?php
-      render_partial('article-intro',array("post"=>$post));
-    ?>
+    <?php render_partial('article-intro', array("post" => $post)); ?>
 
   </div>
   <!-- //Slide Header -->
@@ -31,11 +30,11 @@ $fields = get_fields($post->ID); ?>
       <div class="small-12 columns">
 
         <div class="lead-counter">
-          <?= $fields['stats_section']; ?>
+          <?= $fields['stats_section'] ?>
         </div>
 
         <div class="highlighted">
-          <?= $fields['highlight_section']; ?>
+          <?= $fields['highlight_section'] ?>
         </div>
 
       </div>
@@ -44,7 +43,7 @@ $fields = get_fields($post->ID); ?>
       <div class="small-12 medium-12 large-12 large-centered columns">
 
         <div class="share-container">
-          <h2 data-fade-in-up data-fadein><?=$fields['cta'];?></h2>
+          <h2 data-fade-in-up data-fadein><?= $fields['cta'] ?></h2>
 
           <!-- STEP #1 -->
           <div class="help-box" data-fade-in-up data-fadein>
@@ -54,29 +53,29 @@ $fields = get_fields($post->ID); ?>
 
             <div class="share-buttons">
               <?php wp_reset_postdata(); ?>
-              <a href="<?=facebook_link();?>" class="btn-social facebook" target="_blank" data-log-ga
+              <a href="<?= facebook_link() ?>" class="btn-social facebook" target="_blank" data-log-ga
               data-ga-category="facebook-button"
               data-ga-action="click"
               data-ga-label="Facebook"
               data-fb-event="CompleteAction"
               data-fb-event-name="Facebook"
-              data-link-out="<?=facebook_link();?>"><i></i> Facebook</a>
+              data-link-out="<?= facebook_link() ?>"><i></i> Facebook</a>
 
-              <a href="<?=twitter_link();?>" class="btn-social twitter" target="_blank" data-log-ga
+              <a href="<?= twitter_link() ?>" class="btn-social twitter" target="_blank" data-log-ga
               data-ga-category="twitter-button"
               data-ga-action="click"
               data-ga-label="Twitter"
               data-fb-event="CompleteAction"
               data-fb-event-name="Twitter"
-              data-link-out="<?=twitter_link();?>"><i></i> Twitter</a>
+              data-link-out="<?= twitter_link() ?>"><i></i> Twitter</a>
 
-              <a href="<?=mailto_link();?>" class="btn-social email" data-log-ga
+              <a href="<?= mailto_link() ?>" class="btn-social email" data-log-ga
               data-ga-category="email-button"
               data-ga-action="click"
               data-ga-label="Email"
               data-fb-event="CompleteAction"
               data-fb-event-name="Email"
-              data-link-out="<?=mailto_link();?>"><i></i> Email</a>
+              data-link-out="<?= mailto_link() ?>"><i></i> Email</a>
             </div>
           </div>
           <!-- STEP #1 -->
@@ -115,13 +114,13 @@ $fields = get_fields($post->ID); ?>
             <p>Download these Norfolk Counts posters to start conversations in your school, workplace or community</p>
 
             <div class="share-buttons text-left">
-              <a href="<?= $download_url; ?>" class="btn-action" data-log-ga
+              <a href="<?= $download_url ?>" class="btn-action" data-log-ga
               data-ga-category="posters-button"
               data-ga-action="click"
               data-ga-label="Download posters"
               data-fb-event="CompleteAction"
               data-fb-event-name="Download posters"
-              data-link-out="<?= $download_url; ?>">Download the posters</a>
+              data-link-out="<?= $download_url ?>">Download the posters</a>
             </div>
           </div>
           <!-- STEP #3 -->

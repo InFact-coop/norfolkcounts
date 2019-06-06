@@ -1,14 +1,18 @@
-<?php 
+<?php
 
 // vars
-$button = __('Upgrade Sites');
-
-?>
+$button = __('Upgrade Sites'); ?>
 <div id="acf-upgrade-wrap" class="wrap">
 	
-	<h1><?php _e("Advanced Custom Fields Database Upgrade",'acf'); ?></h1>
+	<h1><?php _e("Advanced Custom Fields Database Upgrade", 'acf'); ?></h1>
 	
-	<p><?php echo sprintf( __("The following sites require a DB upgrade. Check the ones you want to update and then click %s.", 'acf'), '"' . $button . '"'); ?></p>
+	<p><?php echo sprintf(
+   __(
+     "The following sites require a DB upgrade. Check the ones you want to update and then click %s.",
+     'acf'
+   ),
+   '"' . $button . '"'
+ ); ?></p>
 	
 	<p><input type="submit" name="upgrade" value="<?php echo $button; ?>" class="button" id="upgrade-sites"></p>
 	
@@ -17,7 +21,10 @@ $button = __('Upgrade Sites');
 		<thead>
 			<tr>
 				<td class="manage-column check-column" scope="col"><input type="checkbox" id="sites-select-all"></td>
-				<th class="manage-column" scope="col" style="width:33%;"><label for="sites-select-all"><?php _e("Site", 'acf'); ?></label></th>
+				<th class="manage-column" scope="col" style="width:33%;"><label for="sites-select-all"><?php _e(
+      "Site",
+      'acf'
+    ); ?></label></th>
 				<th><?php _e("Description", 'acf'); ?></th>
 			</tr>
 		</thead>
@@ -25,18 +32,21 @@ $button = __('Upgrade Sites');
 		<tfoot>
 		<tr>
 			<td class="manage-column check-column" scope="col"><input type="checkbox" id="sites-select-all-2"></td>
-			<th class="manage-column" scope="col"><label for="sites-select-all-2"><?php _e("Site", 'acf'); ?></label></th>
+			<th class="manage-column" scope="col"><label for="sites-select-all-2"><?php _e(
+     "Site",
+     'acf'
+   ); ?></label></th>
 			<th><?php _e("Description", 'acf'); ?></th>
 		</tr>
 		</tfoot>
 		
 		<tbody id="the-list">
 		
-		<?php foreach( $sites as $i => $site ): ?>
+		<?php foreach ($sites as $i => $site): ?>
 			
-			<tr<?php if( $i % 2 == 0 ): ?> class="alternate"<?php endif; ?>>
+			<tr<?php if ($i % 2 == 0): ?> class="alternate"<?php endif; ?>>
 				<th class="check-column" scope="row">
-				<?php if( $site['updates'] ): ?>
+				<?php if ($site['updates']): ?>
 					<input type="checkbox" value="<?php echo $site['blog_id']; ?>" name="checked[]">
 				<?php endif; ?>
 				</th>
@@ -44,8 +54,12 @@ $button = __('Upgrade Sites');
 					<strong><?php echo $site['name']; ?></strong><br /><?php echo $site['url']; ?>
 				</td>
 				<td>
-				<?php if( $site['updates'] ): ?>
-					<span class="response"><?php printf(__('Site requires database upgrade from %s to %s', 'acf'), $site['acf_version'], $plugin_version); ?></span>
+				<?php if ($site['updates']): ?>
+					<span class="response"><?php printf(
+       __('Site requires database upgrade from %s to %s', 'acf'),
+       $site['acf_version'],
+       $plugin_version
+     ); ?></span>
 				<?php else: ?>
 					<?php _e("Site is up to date", 'acf'); ?>
 				<?php endif; ?>
@@ -60,7 +74,13 @@ $button = __('Upgrade Sites');
 	
 	<p><input type="submit" name="upgrade" value="<?php echo $button; ?>" class="button" id="upgrade-sites-2"></p>
 	
-	<p class="show-on-complete"><?php echo sprintf( __('Database Upgrade complete. <a href="%s">Return to network dashboard</a>', 'acf'), network_admin_url() ); ?></p>
+	<p class="show-on-complete"><?php echo sprintf(
+   __(
+     'Database Upgrade complete. <a href="%s">Return to network dashboard</a>',
+     'acf'
+   ),
+   network_admin_url()
+ ); ?></p>
 	
 	<style type="text/css">
 		
@@ -99,7 +119,10 @@ $button = __('Upgrade Sites');
 					
 					
 					// confirm
-					var answer = confirm("<?php _e('It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?', 'acf'); ?>");
+					var answer = confirm("<?php _e(
+       'It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?',
+       'acf'
+     ); ?>");
 					
 					
 					// bail early if no confirm
@@ -159,7 +182,10 @@ $button = __('Upgrade Sites');
 				
 				
 				// add loading
-				$tr.find('.response').html('<i class="acf-loading"></i></span> <?php printf(__('Upgrading data to version %s', 'acf'), $plugin_version); ?>');
+				$tr.find('.response').html('<i class="acf-loading"></i></span> <?php printf(
+      __('Upgrading data to version %s', 'acf'),
+      $plugin_version
+    ); ?>');
 				
 				
 				// get results

@@ -1,5 +1,4 @@
-<?php
-?>
+
 
 <div class="reveal" id="aboutModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
