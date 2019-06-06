@@ -1,0 +1,22 @@
+// Colors
+
+$colors: (
+  primary: #33576c,
+  neutral-light: #ffffff,
+  neutral-grey: #b2aea3,
+  neutral-dark: #000000,
+  links: #f2696e,
+  red: #ff4100,
+  red-light: #ffe5e1,
+  yellow-light: #f4bd00,
+  yellow: #daa900,
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

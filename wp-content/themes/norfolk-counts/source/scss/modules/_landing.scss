@@ -1,0 +1,485 @@
+.landing {
+  display: none;
+  margin-top: 200px;
+
+  .landing-slider {
+    display: block;
+
+    .header-slider {
+      &#other-stories {
+        .slide-article-header {
+          max-width: 1073px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .slick-slide {
+        outline: 0;
+
+        .slide-article-header {
+          cursor: pointer;
+          opacity: 0.2;
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+        }
+        .slide-article-content {
+          opacity: 0;
+        }
+
+        &.fade-out {
+          .slide-article-header {
+            opacity: 0;
+          }
+        }
+
+        &.slick-center {
+          .slide-article-header,
+          .slide-article-content {
+            opacity: 1;
+          }
+
+          .slide-article-header {
+            max-width: 1073px;
+            display: block;
+            margin: 0 auto;
+          }
+
+          &.move-left {
+            .slide-article-header {
+              opacity: 0.2;
+              //transform: translate3d(-10%, 0px, 0px);
+            }
+          }
+          &.move-right {
+            .slide-article-header {
+              opacity: 0.2;
+              //transform: translate3d(10%, 0px, 0px);
+            }
+          }
+        }
+        &.show-right {
+          .slide-article-header {
+            opacity: 0.8;
+            transform: translate3d(-10%, 0px, 0px);
+            z-index: 110;
+          }
+        }
+        &.show-left {
+          .slide-article-header {
+            opacity: 0.8;
+            transform: translate3d(10%, 0px, 0px);
+            z-index: 110;
+          }
+        }
+      }
+
+      .slide {
+        background: white;
+
+        .slide-article-header {
+          display: block;
+          margin-bottom: 100px !important;
+
+          .article-introduction {
+            .for-cta {
+              @include animation(1s);
+              opacity: 1;
+              position: absolute;
+              top: 50px;
+            }
+            .for-slide {
+              @include animation(1s);
+              opacity: 0;
+            }
+
+            &.show-headline {
+              .for-cta {
+                opacity: 0;
+              }
+              .for-slide {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .slide-article-content {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #other-stories .slide {
+    margin-top: 100px;
+  }
+
+  .lead-counter {
+    display: block;
+    text-align: center;
+    max-width: 810px;
+    margin: 0 auto;
+
+    h2 {
+      @include font-family(CanelaLight);
+      font-size: 30px;
+      line-height: 50px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 30px;
+
+      @include breakpoint(large) {
+        font-size: 40px;
+        line-height: 70px;
+      }
+
+      .counter {
+        display: block;
+        @include font-family(CanelaRegular);
+        font-size: 80px;
+        line-height: 1.1;
+        color: color(yellow);
+        letter-spacing: 0;
+        text-align: center;
+
+        @include breakpoint(medium) {
+          font-size: 120px;
+        }
+
+        @include breakpoint(large) {
+          font-size: 200px;
+        }
+      }
+    }
+
+    p {
+      opacity: 0.8;
+      @include font-family(PostGroteskBook);
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .highlighted {
+    display: block;
+    text-align: center;
+    max-width: 810px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @include breakpoint(large) {
+      margin-top: 200px;
+    }
+
+    p {
+      @include font-family(CanelaLight);
+      font-size: 30px;
+      line-height: 40px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 60px;
+
+      @include breakpoint(xlarge) {
+        font-size: 60px;
+        line-height: 70px;
+      }
+
+      em {
+        @include font-family(CanelaLightItalic);
+        font-style: normal;
+      }
+    }
+  }
+
+  .share-container {
+    display: block;
+    margin-top: 100px;
+
+    &.no-margin-top {
+      margin-top: 0;
+    }
+
+    h2 {
+      @include font-family(CanelaLight);
+      font-size: 30px;
+      line-height: 36px;
+      color: color(yellow);
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+      @include breakpoint(medium) {
+        line-height: 50px;
+      }
+    }
+
+    p {
+      display: block;
+      opacity: 0.8;
+      @include font-family(PostGroteskBook);
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .static-links {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-family: Canela-Light;
+      font-size: 20px;
+      color: color(yellow);
+      letter-spacing: 0;
+      line-height: 50px;
+
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+        margin: 0 20px;
+        color: color(yellow);
+        padding-bottom: 3px;
+        border-bottom: 1px solid color(yellow);
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-color: white;
+        }
+      }
+    }
+
+    .share-buttons {
+      display: block;
+      text-align: center;
+      margin: 50px 0 0 0;
+
+      &.text-left {
+        text-align: left;
+      }
+    }
+
+    .btn-social,
+    .btn-action {
+      display: inline-block;
+      vertical-align: top;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 40px;
+      background: color(yellow);
+      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
+      padding: 0 20px;
+      @include font-family(CanelaRegular);
+      font-size: 20px;
+      color: #ffffff;
+      letter-spacing: 0;
+      margin: 0 0 10px 0;
+      width: 100%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        margin: 0 10px 10px 10px;
+        width: auto;
+        padding: 0 30px;
+      }
+
+      @include breakpoint(large) {
+        height: 66px;
+        line-height: 66px;
+        margin: 0;
+        padding: 0;
+        width: 32%;
+        text-align: center;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: color(yellow-light);
+      }
+
+      &.facebook {
+        i {
+          background-image: url("../images/ico-facebook.svg");
+        }
+      }
+      &.twitter {
+        i {
+          background-image: url("../images/ico-twitter.svg");
+        }
+      }
+      &.email {
+        i {
+          background-image: url("../images/ico-email.svg");
+        }
+      }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .btn-action {
+      @media (max-width: 320px) {
+        padding: 20px 0px;
+        height: auto;
+        line-height: 26px;
+      }
+
+      @include breakpoint(large) {
+        height: 66px;
+        line-height: 66px;
+        padding: 0 50px;
+        width: auto;
+      }
+    }
+
+    .help-box {
+      position: relative;
+      display: block;
+      padding: 20px 15px;
+      background: #ffffff;
+      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
+      text-align: left;
+      max-width: 780px;
+      margin: 0 auto;
+      margin-top: 40px;
+
+      @include breakpoint(medium) {
+        padding: 60px;
+      }
+
+      .icon {
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 20px;
+
+        @include breakpoint(medium) {
+          position: absolute;
+          top: 60px;
+          right: 60px;
+          margin: 0;
+        }
+
+        &.print {
+          background-image: url("../images/ico-print-poster.svg");
+          width: 56px;
+          height: 77px;
+        }
+        &.pencil {
+          background-image: url("../images/ico-pencil.svg");
+          width: 76px;
+          height: 76px;
+        }
+        &.conversation {
+          background-image: url("../images/ico-conversation.svg");
+          width: 81px;
+          height: 81px;
+        }
+        &.group {
+          background-image: url("../images/ico-group.svg");
+          width: 98px;
+          height: 80px;
+        }
+      }
+
+      .headline {
+        display: block;
+        @include font-family(CanelaLight);
+        font-size: 30px;
+        line-height: 36px;
+        color: color(yellow);
+        letter-spacing: 0;
+        margin-bottom: 20px;
+
+        @include breakpoint(large) {
+          font-size: 36px;
+          line-height: 41px;
+        }
+      }
+
+      p {
+        opacity: 0.8;
+        @include font-family(PostGroteskBook);
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        letter-spacing: 0;
+        text-align: left;
+        max-width: 400px;
+
+        @include breakpoint(large) {
+          max-width: 470px;
+        }
+
+        a {
+          @include font-family(PostGroteskBold);
+          color: #acacac;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .btn-print {
+        display: inline-block;
+        @include font-family(Montserrat);
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #000000;
+        letter-spacing: 0;
+        padding-bottom: 2px;
+        margin-top: 30px;
+        border-bottom: 1px solid black;
+
+        &:hover,
+        &:active {
+          color: color(yellow);
+          border-bottom: 1px solid color(yellow);
+        }
+      }
+    }
+  }
+
+  .next-article-cta {
+    margin-top: 150px;
+    padding-bottom: 350px;
+
+    .article-introduction {
+      .article-content {
+        max-width: 90%;
+      }
+      .for-slide {
+        display: none;
+      }
+    }
+  }
+}

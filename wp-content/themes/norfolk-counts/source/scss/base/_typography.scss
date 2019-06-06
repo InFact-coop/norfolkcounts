@@ -1,0 +1,47 @@
+// Typography
+
+body {
+  @include font-family(primary);
+}
+
+@mixin text($type) {
+  @if $type == primary {
+    @include font-family(primary);
+    color: color(neutral-dark);
+  }
+  @if $type == secondary {
+    @include font-family(secondary);
+    color: color(neutral-grey);
+  }
+}
+
+.tag {
+  display: block;
+  @include font-family(Montserrat);
+  font-size: 15px;
+  line-height: 24px;
+  color: color(yellow);
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  @include breakpoint(large) {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+.title {
+  display: block;
+  @include font-family(CanelaLight);
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  letter-spacing: 0;
+  max-width: 90%;
+
+  @include breakpoint(xlarge) {
+    font-size: 55px;
+    line-height: 61px;
+  }
+}

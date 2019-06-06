@@ -1,0 +1,157 @@
+.section-action {
+  margin-top: 140px;
+
+  h1 {
+    display: block;
+    @include font-family(CanelaLight);
+    font-size: 50px;
+    line-height: 60px;
+    color: black;
+    letter-spacing: -0.34px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      font-size: 80px;
+      line-height: 70px;
+    }
+  }
+
+  p {
+    @include font-family(PostGroteskBook);
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+
+    @include breakpoint(medium) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    &.footer {
+      display: block;
+      margin-top: 50px;
+      @include font-family(CanelaRegular);
+      font-size: 20px;
+      color: color(yellow);
+
+      @include breakpoint(medium) {
+        font-size: 26px;
+        margin-top: 100px;
+      }
+
+      a {
+        color: color(yellow);
+
+        @include breakpoint(medium) {
+          padding: 0 20px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .block-content {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .action-highlight {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+
+      @include breakpoint(medium) {
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 340px;
+      }
+
+      span {
+        display: block;
+        @include font-family(CanelaBold);
+        font-size: 60px;
+        line-height: 1;
+        color: color(yellow);
+        margin: 10px 0 0 0;
+        letter-spacing: -0.34px;
+
+        @include breakpoint(medium) {
+          font-size: 80px;
+        }
+      }
+    }
+  }
+
+  .action-box-image {
+    display: block;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.spread {
+      background-image: url("../images/ico-print-poster.svg");
+    }
+    &.pencil {
+      background-image: url("../images/ico-pencil.svg");
+    }
+    &.conversation {
+      background-image: url("../images/ico-conversation.svg");
+    }
+    &.group {
+      background-image: url("../images/ico-group.svg");
+    }
+  }
+
+  .button {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    background: color(yellow);
+    padding: 0;
+    @include font-family(CanelaRegular);
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      padding: 0 30px;
+      width: auto;
+    }
+
+    @include breakpoint(large) {
+      height: 50px;
+      line-height: 54px;
+      font-size: 20px;
+      margin: 0;
+      padding: 0 30px;
+      text-align: center;
+    }
+  }
+}

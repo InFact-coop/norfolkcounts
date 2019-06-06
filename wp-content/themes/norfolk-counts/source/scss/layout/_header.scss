@@ -1,0 +1,36 @@
+// Header
+
+header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+
+  .logo {
+    display: block;
+    width: 99px;
+    height: 51px;
+    background: url("../images/logo.svg") 0 0 no-repeat;
+    background-size: contain;
+    float: left;
+  }
+
+  .share {
+    float: right;
+    @include font-family(CanelaBold);
+    font-size: 20px;
+    line-height: 26px;
+    color: color(yellow);
+    letter-spacing: 0;
+    background: url("../images/share-fb-mobile.svg") 0 0 no-repeat;
+    width: 40px;
+    height: 40px;
+
+    @include breakpoint(medium) {
+      background: url("../images/share-fb-desktop.svg") 0 0 no-repeat;
+      width: 170px;
+      height: 27px;
+    }
+  }
+}

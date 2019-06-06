@@ -1,0 +1,335 @@
+.navigation-slider {
+  position: absolute;
+  width: 180px;
+  top: 110px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+
+  @include breakpoint(medium) {
+    width: 80%;
+  }
+
+  @include breakpoint(large) {
+    width: 90%;
+    top: 120px;
+  }
+
+  @include breakpoint(xlarge) {
+    width: 70%;
+    max-width: $global-width;
+  }
+
+  // .slick-track {
+  //   transform: translate3d(0, 0px, 0px)!important;
+  // }
+
+  .btn-arrow {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+
+    @include breakpoint(medium) {
+      display: none;
+    }
+
+    &:before {
+      display: block;
+      font-family: "slick";
+      line-height: 1;
+      color: color(yellow);
+      font-size: 28px;
+      opacity: 0.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &.btn-prev {
+      left: -25px;
+      &:before {
+        content: "\2190";
+      }
+    }
+    &.btn-next {
+      right: -25px;
+      &:before {
+        content: "\2192";
+      }
+    }
+  }
+
+  .slick-list {
+    height: 30px;
+
+    @include breakpoint(medium) {
+      height: auto;
+    }
+  }
+
+  &:before,
+  &:after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 30px;
+    z-index: 50;
+
+    @include breakpoint(medium) {
+      display: block;
+      width: 15%;
+      height: 100%;
+    }
+  }
+
+  &:before {
+    left: 0;
+    background: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, rgba(255, 255, 255, 1)),
+      color-stop(100%, rgba(255, 255, 255, 0.5))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    background: -ms-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
+    @include breakpoint(large) {
+      background: -moz-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      background: -webkit-gradient(
+        left top,
+        right top,
+        color-stop(0%, rgba(255, 255, 255, 1)),
+        color-stop(100%, rgba(255, 255, 255, 0.2))
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      background: -o-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      background: -ms-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      );
+    }
+  }
+  &:after {
+    right: 0;
+    background: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, rgba(255, 255, 255, 0.5)),
+      color-stop(100%, rgba(255, 255, 255, 1))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
+    @include breakpoint(large) {
+      background: -moz-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: -webkit-gradient(
+        left top,
+        right top,
+        color-stop(0%, rgba(255, 255, 255, 0.2)),
+        color-stop(100%, rgba(255, 255, 255, 1))
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: -o-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: -ms-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+  }
+
+  .slick-center,
+  .slick-current {
+    .slide {
+      i {
+        background-color: color(yellow);
+        width: 14px;
+        height: 14px;
+        transform: translateY(2px);
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .slick-slide {
+    @include breakpoint(medium) {
+      margin: 0;
+    }
+  }
+
+  .slide {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px;
+
+    @include breakpoint(large) {
+      padding: 0 30px;
+    }
+
+    a {
+      display: block;
+      outline: none;
+
+      @include breakpoint(medium) {
+        max-width: 150px;
+      }
+
+      @include breakpoint(large) {
+        width: 210px;
+      }
+    }
+
+    i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 2px solid color(yellow);
+      background-color: white;
+      border-radius: 50%;
+
+      @include breakpoint(medium) {
+        display: none;
+      }
+    }
+
+    span {
+      display: none;
+      @include font-family(Montserrat);
+      font-size: 13px;
+      color: color(yellow);
+      letter-spacing: 0;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 101;
+    top: 10px;
+
+    @include breakpoint(xlarge) {
+      top: 20px;
+    }
+
+    &:before {
+      @include animation();
+      color: color(yellow);
+      font-size: 28px;
+
+      @include breakpoint(large) {
+        opacity: 0;
+      }
+    }
+  }
+
+  .slick-prev {
+    left: -35px;
+  }
+  .slick-next {
+    right: -30px;
+  }
+
+  &:hover {
+    .slick-prev,
+    .slick-next {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
