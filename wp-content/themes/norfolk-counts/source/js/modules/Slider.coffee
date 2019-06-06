@@ -60,11 +60,12 @@ class Slider
     @slider_bullet.slick
       slidesToScroll: 1
       slidesToShow: 5
+      infinite: true
       centerMode: true
       dots: false
-      focusOnSelect: false
       arrows: true
-      asNavFor: '.header-slider'
+      focusOnSelect: true
+      asNavFor: '#slider'
       responsive: [
         {
         breakpoint: 1024
@@ -127,7 +128,7 @@ class Slider
   slider_navigation: =>
 
     # Move to Slider on Top Carousel titles click
-    $(document).on 'click', '[data-slide-go]', (e)=>
+    @slider_bullet.on 'click', '[data-slide-go]', (e)=>
       go_to_slide = $(e.currentTarget).data 'slide-go'
       @slider.slick('slickGoTo', go_to_slide, true)
 
