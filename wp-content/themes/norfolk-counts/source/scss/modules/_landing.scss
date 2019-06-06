@@ -142,7 +142,7 @@
         @include font-family(CanelaRegular);
         font-size: 80px;
         line-height: 1.1;
-        color: color(red);
+        color: color(yellow);
         letter-spacing: 0;
         text-align: center;
 
@@ -217,7 +217,7 @@
       @include font-family(CanelaLight);
       font-size: 30px;
       line-height: 36px;
-      color: color(red);
+      color: color(yellow);
       letter-spacing: 0;
       text-align: center;
       margin: 0 auto;
@@ -245,7 +245,7 @@
       margin-top: 30px;
       font-family: Canela-Light;
       font-size: 20px;
-      color: color(red);
+      color: color(yellow);
       letter-spacing: 0;
       line-height: 50px;
 
@@ -254,9 +254,9 @@
         vertical-align: middle;
         line-height: 1;
         margin: 0 20px;
-        color: color(red);
+        color: color(yellow);
         padding-bottom: 3px;
-        border-bottom: 1px solid color(red);
+        border-bottom: 1px solid color(yellow);
 
         &:hover,
         &:active,
@@ -283,7 +283,7 @@
       height: 60px;
       line-height: 60px;
       border-radius: 40px;
-      background: #ff4100;
+      background: color(yellow);
       box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
       padding: 0 20px;
       @include font-family(CanelaRegular);
@@ -312,7 +312,7 @@
       &:hover,
       &:active,
       &:focus {
-        background-color: color(red-dark);
+        background-color: color(yellow-light);
       }
 
       &.facebook {
@@ -414,7 +414,7 @@
         @include font-family(CanelaLight);
         font-size: 30px;
         line-height: 36px;
-        color: color(red);
+        color: color(yellow);
         letter-spacing: 0;
         margin-bottom: 20px;
 
@@ -462,8 +462,8 @@
 
         &:hover,
         &:active {
-          color: color(red);
-          border-bottom: 1px solid color(red);
+          color: color(yellow);
+          border-bottom: 1px solid color(yellow);
         }
       }
     }

@@ -35,7 +35,7 @@
       margin-top: 50px;
       @include font-family(CanelaRegular);
       font-size: 20px;
-      color: color(red);
+      color: color(yellow);
 
       @include breakpoint(medium) {
         font-size: 26px;
@@ -43,7 +43,7 @@
       }
 
       a {
-        color: color(red);
+        color: color(yellow);
 
         @include breakpoint(medium) {
           padding: 0 20px;
@@ -91,7 +91,7 @@
         @include font-family(CanelaBold);
         font-size: 60px;
         line-height: 1;
-        color: color(red);
+        color: color(yellow);
         margin: 10px 0 0 0;
         letter-spacing: -0.34px;
 
@@ -131,7 +131,7 @@
     height: 40px;
     line-height: 40px;
     border-radius: 40px;
-    background: #ff4100;
+    background: color(yellow);
     padding: 0;
     @include font-family(CanelaRegular);
     font-size: 16px;

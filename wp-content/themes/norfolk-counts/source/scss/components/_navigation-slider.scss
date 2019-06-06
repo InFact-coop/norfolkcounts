@@ -40,7 +40,7 @@
       display: block;
       font-family: "slick";
       line-height: 1;
-      color: color(red);
+      color: color(yellow);
       font-size: 28px;
       opacity: 0.75;
       -webkit-font-smoothing: antialiased;
@@ -228,7 +228,7 @@
   .slick-current {
     .slide {
       i {
-        background-color: color(red);
+        background-color: color(yellow);
         width: 14px;
         height: 14px;
         transform: translateY(2px);
@@ -272,7 +272,7 @@
       display: inline-block;
       width: 10px;
       height: 10px;
-      border: 2px solid color(red);
+      border: 2px solid color(yellow);
       background-color: white;
       border-radius: 50%;
 
@@ -285,7 +285,7 @@
       display: none;
       @include font-family(Montserrat);
       font-size: 13px;
-      color: color(red);
+      color: color(yellow);
       letter-spacing: 0;
       line-height: 20px;
       text-transform: uppercase;
@@ -308,7 +308,7 @@
 
     &:before {
       @include animation();
-      color: color(red);
+      color: color(yellow);
       font-size: 28px;
 
       @include breakpoint(large) {

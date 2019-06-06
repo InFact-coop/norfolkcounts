@@ -55,7 +55,7 @@
               "text": "#ffffff"
             },
             "button": {
-              "background": "#C83300",
+              "background": "#c83300",
               "text": "#ffffff"
             }
           },
