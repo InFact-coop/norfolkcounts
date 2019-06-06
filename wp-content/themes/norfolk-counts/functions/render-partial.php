@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 /*
 *
 *
@@ -18,36 +15,31 @@
 * @return null
 */
 
-function render_partial($partial, $options=array() )
+function render_partial($partial, $options = array())
 {
-
-  if(is_array($options)):
+  if (is_array($options)):
     //make the options available as simple variables
-    foreach($options as $key => $val){
+    foreach ($options as $key => $val) {
       $$key = $val;
     }
   else:
     $content = $options;
   endif;
 
-  require(get_stylesheet_directory()."/partials/$partial.php");
-
+  require get_stylesheet_directory() . "/partials/$partial.php";
 }
 
 /*
-*
-*
-* @function render_partial_html
-* wraps render_partial and returns the HTML instead of echoing it.
-* @return string $html of the partial
-*/
+ *
+ *
+ * @function render_partial_html
+ * wraps render_partial and returns the HTML instead of echoing it.
+ * @return string $html of the partial
+ */
 
-function render_partial_html($partial, $options=array() )
+function render_partial_html($partial, $options = array())
 {
-
   ob_start();
-  render_partial( $partial, $options );
-  return(ob_get_clean());
-
-
+  render_partial($partial, $options);
+  return ob_get_clean();
 }

@@ -7,7 +7,8 @@ use Roots\Sage\Assets;
 /**
  * Theme setup
  */
-function setup() {
+function setup()
+{
   // Enable features from Soil when plugin is activated
   // https://roots.io/plugins/soil/
   add_theme_support('soil-clean-up');
@@ -32,40 +33,60 @@ function setup() {
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
-  add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
+  add_theme_support('post-formats', [
+    'aside',
+    'gallery',
+    'link',
+    'image',
+    'quote',
+    'video',
+    'audio'
+  ]);
 
   // Enable HTML5 markup support
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
-  add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+  add_theme_support('html5', [
+    'caption',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'search-form'
+  ]);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
-
-
 
 /**
  * Theme assets
  */
-function assets() {
-  $css_ver = filemtime( get_template_directory().'/dist/css/app.css' );
-  wp_enqueue_style('3tone/css', Assets\asset_path('css/app.css?v='.$css_ver), false, null);
+function assets()
+{
+  $css_ver = filemtime(get_template_directory() . '/dist/css/app.css');
+  wp_enqueue_style(
+    '3tone/css',
+    Assets\asset_path('css/app.css?v=' . $css_ver),
+    false,
+    null
+  );
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
-   wp_enqueue_script('comment-reply');
+    wp_enqueue_script('comment-reply');
   }
 
-
-  $js_ver = filemtime( get_template_directory().'/dist/js/app.js' );
-  wp_enqueue_script('3tone/js', Assets\asset_path('js/app.js?v='.$js_ver), [], null, true);
+  $js_ver = filemtime(get_template_directory() . '/dist/js/app.js');
+  wp_enqueue_script(
+    '3tone/js',
+    Assets\asset_path('js/app.js?v=' . $js_ver),
+    [],
+    null,
+    true
+  );
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
-
 
 /**
  * Don't show the admin bar
  */
 show_admin_bar(false);
-
-
 
 /**
  * ----- ENABLE IF USING IMGIX -----
@@ -74,12 +95,10 @@ show_admin_bar(false);
  */
 // add_filter( 'wp_calculate_image_srcset_meta', '__return_null' );
 
-
-
 /**
  * Disable Plugin update notifications
  */
-if(defined('WP_ENV') && WP_ENV != 'development'){
-  remove_action('load-update-core.php','wp_update_plugins');
-  add_filter('pre_site_transient_update_plugins','__return_null');
+if (defined('WP_ENV') && WP_ENV != 'development') {
+  remove_action('load-update-core.php', 'wp_update_plugins');
+  add_filter('pre_site_transient_update_plugins', '__return_null');
 }

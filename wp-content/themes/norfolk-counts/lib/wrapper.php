@@ -9,15 +9,18 @@ namespace Roots\Sage\Wrapper;
  * @link http://scribu.net/wordpress/theme-wrappers.html
  */
 
-function template_path() {
+function template_path()
+{
   return SageWrapping::$main_template;
 }
 
-function sidebar_path() {
+function sidebar_path()
+{
   return new SageWrapping('templates/sidebar.php');
 }
 
-class SageWrapping {
+class SageWrapping
+{
   // Stores the full path to the main template file
   public static $main_template;
 
@@ -30,7 +33,8 @@ class SageWrapping {
   // Stores the base name of the template file; e.g. 'page' for 'page.php' etc.
   public static $base;
 
-  public function __construct($template = 'base.php') {
+  public function __construct($template = 'base.php')
+  {
     $this->slug = basename($template, '.php');
     $this->templates = [$template];
 
@@ -40,12 +44,17 @@ class SageWrapping {
     }
   }
 
-  public function __toString() {
-    $this->templates = apply_filters('sage/wrap_' . $this->slug, $this->templates);
+  public function __toString()
+  {
+    $this->templates = apply_filters(
+      'sage/wrap_' . $this->slug,
+      $this->templates
+    );
     return locate_template($this->templates);
   }
 
-  public static function wrap($main) {
+  public static function wrap($main)
+  {
     // Check for other filters returning null
     if (!is_string($main)) {
       return $main;

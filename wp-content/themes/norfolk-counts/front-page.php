@@ -1,5 +1,7 @@
-<?php the_post(); $fields = get_fields();
-$stories = get_all_stories(); ?>
+<?php the_post();
+$fields = get_fields();
+$stories = get_all_stories();
+?>
 <!-- STEPS CONTENT -->
 <section class="steps-container">
 
@@ -8,8 +10,8 @@ $stories = get_all_stories(); ?>
     <div class="row">
       <div class="small-12 columns text-center">
 
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/img-windmill.svg" alt="" class="img-house">
-        <h1><?= get_bloginfo('name'); ?></h1>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-windmill.svg" alt="" class="img-house">
+        <h1><?= get_bloginfo('name') ?></h1>
         <?php the_content(); ?>
 
         <a href="#"
@@ -17,7 +19,9 @@ $stories = get_all_stories(); ?>
         data-ga-category="find-out-button"
         data-ga-action="click"
         data-ga-label="Find out what"
-        class="btn-action active uppercase begin" data-go-step="1"><?=$fields['step_1_cta'];?></a>
+        class="btn-action active uppercase begin" data-go-step="1"><?= $fields[
+          'step_1_cta'
+        ] ?></a>
 
 
       </div>
@@ -33,8 +37,8 @@ $stories = get_all_stories(); ?>
 
         <span class="progress incomplete">Step 1/2</span>
 
-        <h2><?=$fields['step_1']['step_1_question'];?></h2>
-        <p><?=$fields['step_1']['step_1_text'];?></p>
+        <h2><?= $fields['step_1']['step_1_question'] ?></h2>
+        <p><?= $fields['step_1']['step_1_text'] ?></p>
 
         <a href="#" class="btn-action light" data-log-ga
         data-ga-category="live-in-norfolk-button"
@@ -61,19 +65,23 @@ $stories = get_all_stories(); ?>
 
         <span class="progress incomplete">Step 1/2</span>
 
-        <h2><?=$fields['step_1']['no_answer_text'];?></h2>
-        <p><a href="<?=$fields['step_1']['no_answer_link']['url'];?>" data-log-ga
+        <h2><?= $fields['step_1']['no_answer_text'] ?></h2>
+        <p><a href="<?= $fields['step_1']['no_answer_link'][
+          'url'
+        ] ?>" data-log-ga
         data-ga-category="metro-link"
         data-ga-action="click"
         data-ga-label="Clicked 'reasons to move'"
-        data-link-out="<?=$fields['step_1']['no_answer_link']['url'];?>"
-          target="_blank"><?=$fields['step_1']['no_answer_link']['title'];?></a><br />And, if you need yet another reason...</p>
+        data-link-out="<?= $fields['step_1']['no_answer_link']['url'] ?>"
+          target="_blank"><?= $fields['step_1']['no_answer_link'][
+            'title'
+          ] ?></a><br />And, if you need yet another reason...</p>
 
         <a href="#" class="btn-action light large" data-log-ga
         data-ga-category="norfolk-is-proud"
         data-ga-action="click"
         data-ga-label="Clicked 'why norfolk is proud'"
-        data-go-step="2"><?=$fields['step_1']['no_answer_cta'];?></a>
+        data-go-step="2"><?= $fields['step_1']['no_answer_cta'] ?></a>
 
       </div>
     </div>
@@ -88,18 +96,18 @@ $stories = get_all_stories(); ?>
 
         <span class="progress complete">Step 2/2</span>
 
-        <h2><?=$fields['step_2']['step_2_main_text'];?></h2>
-        <p><?=$fields['step_2']['step_2_sub_text'];?></p>
+        <h2><?= $fields['step_2']['step_2_main_text'] ?></h2>
+        <p><?= $fields['step_2']['step_2_sub_text'] ?></p>
 
         <ul class="option-list">
-          <?php foreach($stories as $post): ?>
+          <?php foreach ($stories as $post): ?>
           <li><a href="#" data-log-ga
           data-ga-category="stories"
           data-ga-action="view"
-          data-ga-label="<?=esc_attr($post->post_title);?>"
+          data-ga-label="<?= esc_attr($post->post_title) ?>"
           data-fb-event="ViewContent"
-          data-fb-event-name="<?=esc_attr($post->post_title);?>"
-            class="btn-action" data-go-step="transition" data-first-story="<?=$post->ID;?>"><?=$post->post_title;?></a></li>
+          data-fb-event-name="<?= esc_attr($post->post_title) ?>"
+            class="btn-action" data-go-step="transition" data-first-story="<?= $post->ID ?>"><?= $post->post_title ?></a></li>
           <?php endforeach; ?>
         </ul>
 
@@ -120,9 +128,9 @@ $stories = get_all_stories(); ?>
 
         <div class="rotator-icon"></div>
         <div class="messages">
-          <?php foreach($fields['preloader'] as $row): ?>
-            <p><?=$row['loader_text'];?></p>
-          <?php endforeach;?>
+          <?php foreach ($fields['preloader'] as $row): ?>
+            <p><?= $row['loader_text'] ?></p>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 <?php namespace norfolk;
 
-
-
 /*
 *
 *
@@ -24,19 +22,19 @@
 
 function render_module()
 {
-  if(func_num_args()==1){
+  if (func_num_args() == 1) {
     $module = func_get_arg(0);
     $module_type = $module['acf_fc_layout'];
   }
-  if(func_num_args()==2){
+  if (func_num_args() == 2) {
     $module = func_get_arg(1);
     $module_type = func_get_arg(0);
   }
 
   $module_filename = "partials/modules/{$module_type}.php";
   $file = locate_template($module_filename);
-  if($file === ""){
+  if ($file === "") {
     throw new \Exception("Module file for $module_type was not found.");
   }
-  require($file);
+  require $file;
 }

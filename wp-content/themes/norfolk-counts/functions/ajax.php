@@ -1,8 +1,6 @@
 <?php
 
-$ajax_includes = array(
-  'functions/ajax/sample_ajax.php'
-);
+$ajax_includes = array('functions/ajax/sample_ajax.php');
 
 include_files($ajax_includes);
 
