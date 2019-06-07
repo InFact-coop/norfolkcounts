@@ -6,19 +6,20 @@
 
   @include breakpoint(large) {
     padding: 80px 60px;
-    width: 700px;
+    width: 70%;
+    margin-bottom: 100px;
 
     &.scrollable {
       padding-right: 0;
+    }
+    &.doGooderModal {
+      width: 700px;
     }
   }
 
   .reveal-content {
     @include breakpoint(large) {
-      height: 400px;
-      padding-right: 60px;
       overflow-y: auto;
-      padding-bottom: 40px;
     }
   }
 
