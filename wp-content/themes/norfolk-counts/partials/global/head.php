@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/favicons/favicon-16x16.png">
     <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/favicons/manifest.json">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
