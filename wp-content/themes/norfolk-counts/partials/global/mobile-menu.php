@@ -1,3 +1,1 @@
-<div class="mobileMenu">
-
-</div>
+<div class="mobileMenu"></div>

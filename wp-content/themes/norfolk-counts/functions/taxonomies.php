@@ -7,9 +7,7 @@
  *
  * -----------------------------------------------*/
 
-$tax_includes = array(
-  'functions/taxonomies/custom_tax.php'
-);
+$tax_includes = array('functions/taxonomies/custom_tax.php');
 
 include_files($tax_includes);
 

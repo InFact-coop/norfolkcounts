@@ -7,9 +7,7 @@
  *
  * -----------------------------------------------*/
 
-$cpt_includes = array(
-	
-);
+$cpt_includes = array();
 
 include_files($cpt_includes);
 

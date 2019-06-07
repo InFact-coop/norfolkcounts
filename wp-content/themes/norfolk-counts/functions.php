@@ -11,9 +11,9 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/setup.php',     // Theme setup
-  'lib/wrapper.php',   // Theme wrapper class
+  'lib/assets.php', // Scripts and stylesheets
+  'lib/setup.php', // Theme setup
+  'lib/wrapper.php', // Theme wrapper class
   'functions/acf.php',
   'functions/admin-tweaks.php',
   'functions/extras.php',
@@ -29,13 +29,16 @@ $sage_includes = [
   'functions/render-partial.php'
 ];
 
-
 include_files($sage_includes);
 
-function include_files($files){
+function include_files($files)
+{
   foreach ($files as $file) {
-    if (!$filepath = locate_template($file)) {
-      trigger_error(sprintf(__('Error locating %s for inclusion', '3tone'), $file), E_USER_ERROR);
+    if (!($filepath = locate_template($file))) {
+      trigger_error(
+        sprintf(__('Error locating %s for inclusion', '3tone'), $file),
+        E_USER_ERROR
+      );
     }
 
     require_once $filepath;
