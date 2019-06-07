@@ -57,6 +57,12 @@ $fields = get_fields($post->ID);
         data-open="doGooderModal"
         type="button"
         name="button"
+        data-log-ga
+        data-ga-category="email-button"
+        data-ga-action="click"
+        data-ga-label="Email"
+        data-fb-event="CompleteAction"
+        data-fb-event-name="Email"
         class="btn-action active begin pointer"
       >
         Email
