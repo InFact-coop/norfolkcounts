@@ -30,23 +30,32 @@ $fields = get_fields($post->ID);
           </div>
 
           <div class="first-cta">
-              <div class="cta-heading">Ask Liz Truss to protect Norfolk's Aid contributions.</div>
+            <div class="cta-heading">Ask Liz Truss to protect Norfolk's Aid contributions.</div>
             <div class="cta-buttons">
-            <?php wp_reset_postdata(); ?>
-            <a href="<?= mailto_link() ?>" class="btn-social email" data-log-ga
-            data-ga-category="email-button"
-            data-ga-action="click"
-            data-ga-label="Email"
-            data-fb-event="CompleteAction"
-            data-fb-event-name="Email"
-            data-link-out="<?= mailto_link() ?>"><i></i> Email</a>
-            <a href="<?= twitter_link() ?>" class="btn-social twitter" target="_blank" data-log-ga
-            data-ga-category="twitter-button"
-            data-ga-action="click"
-            data-ga-label="Twitter"
-            data-fb-event="CompleteAction"
-            data-fb-event-name="Twitter"
-            data-link-out="<?= twitter_link() ?>"><i></i> Twitter</a>
+              <?php wp_reset_postdata(); ?>
+              <a 
+                href="<?= mailto_link() ?>" 
+                class="btn-social email" 
+                data-log-ga
+                data-ga-category="email-button"
+                data-ga-action="click"
+                data-ga-label="Email"
+                data-fb-event="CompleteAction"
+                data-fb-event-name="Email"
+                data-link-out="<?= mailto_link() ?>">Email
+              </a>
+              <a 
+                href="<?= twitter_link() ?>" 
+                class="btn-social twitter" 
+                target="_blank" 
+                data-log-ga
+                data-ga-category="twitter-button"
+                data-ga-action="click"
+                data-ga-label="Twitter"
+                data-fb-event="CompleteAction"
+                data-fb-event-name="Twitter"
+                data-link-out="<?= twitter_link() ?>">Twitter
+              </a>
             </div>
           </div>
 

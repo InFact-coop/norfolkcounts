@@ -48,7 +48,7 @@ $stories = get_all_stories();
           data-ga-action="click"
           data-ga-label="Yes - Lives in Norfolk"
           data-go-step="2"
-          >Yes</a
+          >Yes, I do!</a
         >
         <a
           href="#"
@@ -58,7 +58,7 @@ $stories = get_all_stories();
           data-ga-action="click"
           data-ga-label="No - doesn't live in Norfolk"
           data-go-step="1-no"
-          >No</a
+          >No, I don't...</a
         >
       </div>
     </div>

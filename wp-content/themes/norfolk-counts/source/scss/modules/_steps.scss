@@ -133,9 +133,13 @@
     }
 
     .option-list {
-      margin: 60px 0 0 0;
+      margin: 30px 0 30px 0;
       padding: 0;
       list-style-type: none;
+
+      @include breakpoint(medium) {
+        margin: 60px 0 0 0;
+      }
 
       li {
         display: inline-block;
@@ -148,7 +152,12 @@
           letter-spacing: 0;
           height: 54px;
           line-height: 50px;
-          padding: 0 30px;
+          padding: 0 25px;
+          width: 80vw;
+
+          @include breakpoint(medium) {
+            width: 270px;
+          }
         }
       }
     }
