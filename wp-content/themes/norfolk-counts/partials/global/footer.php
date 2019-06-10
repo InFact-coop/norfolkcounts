@@ -13,13 +13,13 @@
       id="dogooder"
       allowTransparency="true"
       style="box-sizing:border-box; min-width:300px; width:550px; max-width:100%;"
-      src="https://norfolkcounts.good.do/emailyourmp/emailliztruss/?embedded="
+      src="https://norfolkcounts1.good.do/takeaction/norfolkcounts/?embedded="
       scrolling="no"
       frameborder="0"
       ><p>
         Your browser does not support iframes. Please visit
-        <a href="https://norfolkcounts.good.do/emailyourmp/emailliztruss/"
-          >https://norfolkcounts.good.do/emailyourmp/emailliztruss/</a
+        <a href="https://norfolkcounts1.good.do/takeaction/norfolkcounts/"
+          >https://norfolkcounts1.good.do/takeaction/norfolkcounts/</a
         >
       </p></iframe
     ><script>
