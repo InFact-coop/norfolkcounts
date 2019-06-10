@@ -23,20 +23,13 @@ $fields = get_fields($post->ID);
   <div class="slide-article-content">
     <div class="row" data-fade-in-up data-fadein>
       <div class="small-12 columns">
-        <div class="lead-counter">
-          <?= $fields['stats_section'] ?>
-        </div>
 
-        <div class="highlighted">
-          <?= $fields['highlight_section'] ?>
-        </div>
       </div>
     </div>
     <div class="row">
-      <div class="small-12 medium-12 large-12 large-centered columns">
-        <div class="share-container">
-          <h2 data-fade-in-up data-fadein><?= $fields['cta'] ?></h2>
+      <div class="small-12 medium-12 large-12 large-centered columns hide">
 
+        <div class="share-container">
           <!-- STEP #1 -->
           <div class="help-box" data-fade-in-up data-fadein>
             <i class="icon print"></i>

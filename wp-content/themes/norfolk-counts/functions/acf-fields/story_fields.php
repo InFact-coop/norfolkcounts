@@ -25,9 +25,66 @@ if (function_exists('acf_add_local_field_group')):
         'delay' => 0
       ),
       array(
-        'key' => 'field_5bce470719ccf',
-        'label' => 'Highlight Section',
-        'name' => 'highlight_section',
+        'key' => 'field_5bce470719ccf_title',
+        'label' => 'Story Paragraph — Heading',
+        'name' => 'story_heading',
+        'type' => 'text',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => ''
+        ),
+        'default_value' => '',
+        'tabs' => 'all',
+        'toolbar' => 'basic',
+        'media_upload' => 0,
+        'delay' => 0
+      ),
+      array(
+        'key' => 'field_5bce470719ccf_content',
+        'label' => 'Story Paragraph — Content',
+        'name' => 'story_content',
+        'type' => 'wysiwyg',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => ''
+        ),
+        'default_value' => '',
+        'tabs' => 'all',
+        'toolbar' => 'basic',
+        'media_upload' => 0,
+        'delay' => 0
+      ),
+      array(
+        'key' => 'field_5bce470719ccg_title',
+        'label' => 'Norfolk Paragraph — Heading',
+        'name' => 'norfolk_heading',
+        'type' => 'text',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array(
+          'width' => '',
+          'class' => '',
+          'id' => ''
+        ),
+        'default_value' => '',
+        'tabs' => 'all',
+        'toolbar' => 'basic',
+        'media_upload' => 0,
+        'delay' => 0
+      ),
+      array(
+        'key' => 'field_5bce470719ccg_content',
+        'label' => 'Norfolk Paragraph — Content',
+        'name' => 'norfolk_content',
         'type' => 'wysiwyg',
         'instructions' => '',
         'required' => 0,
