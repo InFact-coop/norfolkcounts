@@ -108,9 +108,9 @@
     <ul>
       <li class="i b">• The UK delivered 1950 tonnes of emergency Relief</li>
       <li class="i b">
-        • 1.2659% of 1950 tonnes of emergency relief = 24.68 tonnes
+        • 1.05% of 1950 tonnes of emergency relief = 20.5 tonnes
       </li>
-      <li class="i b">• Norfolk delivered 24.68 tonnes of emergency relief</li>
+      <li class="i b">• Norfolk delivered 20.5 tonnes of emergency relief</li>
     </ul>
 
     <p>
