@@ -110,7 +110,7 @@ $fields = get_fields($post->ID);
                 >Email your MP</a
               >
               <a
-                href="https://ctt.ac/Scem8"
+                href="https://ctt.ac/2ffE2"
                 class="btn-action"
                 target="_blank"
                 data-log-ga
@@ -119,7 +119,7 @@ $fields = get_fields($post->ID);
                 data-ga-label="Tweet MP"
                 data-fb-event="CompleteAction"
                 data-fb-event-name="Tweet MP"
-                data-link-out="https://ctt.ac/Scem8"
+                data-link-out="https://ctt.ac/2ffE2"
                 >Tweet your MP</a
               >
             </div>

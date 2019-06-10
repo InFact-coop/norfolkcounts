@@ -98,13 +98,24 @@ $fields = get_fields($post->ID);
         Email
       </button>
 
-      <button
+      <a
+        href="https://ctt.ac/2ffE2"
+        target="_blank"
+        data-log-ga
+        data-ga-category="tweet-mp-button"
+        data-ga-action="click"
+        data-ga-label="Tweet MP"
+        data-fb-event="CompleteAction"
+        data-fb-event-name="Tweet MP"
+        data-link-out="https://ctt.ac/2ffE2"
+      >
+        <button      
         type="button"
         name="button"
-        class="btn-action active begin pointer"
-      >
+        class="btn-action active begin pointer">
         Tweet
-      </button>
+        </button>
+      </a>
     </div>
     <div class="small-12 medium-6 columns">
       <figure class="article-image">
