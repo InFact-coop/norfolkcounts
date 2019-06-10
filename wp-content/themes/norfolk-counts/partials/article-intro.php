@@ -29,7 +29,9 @@ $fields = get_fields($post->ID);
             <?= $fields['stats_section'] ?>
           </div>
 
-          <div class="share-buttons">
+          <div class="first-cta">
+              <div class="cta-heading">Ask Liz Truss to protect Norfolk's Aid contributions.</div>
+            <div class="cta-buttons">
             <?php wp_reset_postdata(); ?>
             <a href="<?= mailto_link() ?>" class="btn-social email" data-log-ga
             data-ga-category="email-button"
@@ -45,16 +47,18 @@ $fields = get_fields($post->ID);
             data-fb-event="CompleteAction"
             data-fb-event-name="Twitter"
             data-link-out="<?= twitter_link() ?>"><i></i> Twitter</a>
-
+            </div>
           </div>
 
           <div>
           <div class="story-paragraph">
-            <?= $fields['story_heading'] ?>
+            <div class="paragraph-heading"><?= $fields['story_heading'] ?></div>
             <?= $fields['story_content'] ?>
           </div>
           <div class="norfolk-paragraph">
-            <?= $fields['norfolk_heading'] ?>
+            <div class="paragraph-heading"><?= $fields[
+              'norfolk_heading'
+            ] ?> </div>
             <?= $fields['norfolk_content'] ?>
           </div>
           </div>
@@ -74,6 +78,7 @@ $fields = get_fields($post->ID);
           <?= $fields['highlight_section'] ?>
         </div>
 
+        <div>
         <div class="for-cta">
           <?php $frontpage_id = get_option('page_on_front'); ?>
           <span class="tag"><?= $post->post_title ?></span>
@@ -93,19 +98,18 @@ $fields = get_fields($post->ID);
         data-ga-label="Email"
         data-fb-event="CompleteAction"
         data-fb-event-name="Email"
-        class="btn-action active begin pointer"
-      >
-        Email
+        class="btn-action active begin pointer email"
+      ><i></i> Email
       </button>
 
       <button
         type="button"
         name="button"
-        class="btn-action active begin pointer"
-      >
-        Tweet
+        class="btn-action active begin pointer twitter"
+      ><i></i> Tweet
       </button>
     </div>
+          </div>
     <div class="small-12 medium-6 columns">
       <figure class="article-image">
         <img

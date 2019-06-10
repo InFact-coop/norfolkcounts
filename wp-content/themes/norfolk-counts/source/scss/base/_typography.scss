@@ -17,12 +17,13 @@ body {
 
 .tag {
   display: block;
-  @include font-family(Montserrat);
+  @include font-family(PostGroteskBold);
   font-size: 15px;
   line-height: 24px;
   color: color(yellow);
   letter-spacing: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 
   @include breakpoint(large) {

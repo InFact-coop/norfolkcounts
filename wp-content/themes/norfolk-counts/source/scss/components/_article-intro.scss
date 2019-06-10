@@ -1,3 +1,84 @@
+.btn-social,
+.btn-action {
+  // display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 40px;
+  background: color(yellow);
+  box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
+  padding: 0 40px 0 20px;
+  @include font-family(CanelaRegular);
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 0 0 10px 0;
+  // width: 100%;
+  text-align: center;
+
+  // @include breakpoint(medium) {
+  //   margin: 0 10px 10px 10px;
+  //   width: auto;
+  //   padding: 0 30px;
+  // }
+
+  // @include breakpoint(large) {
+  //   height: 66px;
+  //   line-height: 66px;
+  //   margin: 0;
+  //   padding: 0;
+  //   width: 32%;
+  //   text-align: center;
+  // }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: color(yellow-light);
+  }
+
+  &.facebook {
+    i {
+      background-image: url("../images/ico-facebook.svg");
+    }
+  }
+  &.twitter {
+    i {
+      background-image: url("../images/ico-twitter.svg");
+    }
+  }
+  &.email {
+    i {
+      background-image: url("../images/ico-email.svg");
+    }
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.btn-action {
+  @media (max-width: 320px) {
+    padding: 20px 0px;
+    height: auto;
+    line-height: 26px;
+  }
+
+  @include breakpoint(large) {
+    height: 66px;
+    line-height: 66px;
+    padding: 0 50px;
+    width: auto;
+  }
+}
 .article-introduction {
   .article-content {
     max-width: 450px;
@@ -26,6 +107,37 @@
         text-transform: uppercase;
       }
     }
+
+    .first-cta {
+      width: 90%;
+      margin-bottom: 55px;
+
+      .cta-heading {
+        @include font-family(PostGroteskBook);
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 26px;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+      }
+    }
+
+    .story-paragraph {
+      margin-bottom: 22px;
+    }
+
+    .paragraph-heading {
+      color: color(yellow);
+      @include font-family(PostGroteskMedium);
+      font-size: 28px;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
   }
 
   .article-image {
@@ -33,7 +145,7 @@
     padding: 0;
 
     @include breakpoint(medium) {
-      margin: 0;
+      margin: 42px 0 0 0;
     }
 
     img {
