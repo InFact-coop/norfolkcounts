@@ -1,6 +1,10 @@
 .landing {
   display: none;
-  margin-top: 200px;
+  margin-top: 120px;
+
+  @media (min-width: 768px) {
+    margin-top: 200px;
+  }
 
   .landing-slider {
     display: block;
@@ -81,7 +85,7 @@
 
         .slide-article-header {
           display: block;
-          margin-bottom: 100px !important;
+          // margin-bottom: 100px !important;
 
           .article-introduction {
             .for-cta {
@@ -130,12 +134,22 @@
       letter-spacing: 0;
       margin-bottom: 14px;
 
+      @include breakpoint(small) {
+        font-size: 20px;
+        line-height: 40px;
+      }
+
       .counter {
         @include font-family(CanelaRegular);
         font-size: 45px;
         font-weight: 500;
         line-height: 50px;
         color: color(yellow);
+
+        @include breakpoint(small) {
+          font-size: 35px;
+          line-height: 40px;
+        }
       }
     }
 
@@ -157,7 +171,7 @@
   }
 
   .highlighted {
-    display: block;
+    display: none;
     text-align: center;
     max-width: 810px;
     margin: 0 auto;

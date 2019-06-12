@@ -23,7 +23,7 @@ body {
   color: color(yellow);
   letter-spacing: 0;
   margin-bottom: 14px;
-  font-weight: bold;
+  font-weight: medium;
   text-transform: uppercase;
 
   @include breakpoint(large) {
