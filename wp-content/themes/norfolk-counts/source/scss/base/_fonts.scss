@@ -52,6 +52,12 @@
 }
 
 @font-face {
+  font-family: "PostGrotesk-Medium";
+  src: url("../fonts/PostGrotesk-Medium.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "slick";
   src: url("../fonts/slick.eot");
   src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"),
@@ -74,6 +80,9 @@
   }
   @if $family == PostGroteskLight {
     font-family: "PostGrotesk-Light";
+  }
+  @if $family == PostGroteskMedium {
+    font-family: "PostGrotesk-Medium";
   }
   @if $family == CanelaRegular {
     font-family: "Canela-Regular";

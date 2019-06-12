@@ -17,13 +17,15 @@ body {
 
 .tag {
   display: block;
-  @include font-family(Montserrat);
+  @include font-family(PostGroteskBold);
   font-size: 15px;
   line-height: 24px;
   color: color(yellow);
   letter-spacing: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
 
   @include breakpoint(large) {
     font-size: 17px;

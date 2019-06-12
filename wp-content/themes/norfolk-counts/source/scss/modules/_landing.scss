@@ -1,6 +1,10 @@
 .landing {
   display: none;
-  margin-top: 200px;
+  margin-top: 120px;
+
+  @media (min-width: 768px) {
+    margin-top: 200px;
+  }
 
   .landing-slider {
     display: block;
@@ -81,7 +85,7 @@
 
         .slide-article-header {
           display: block;
-          margin-bottom: 100px !important;
+          // margin-bottom: 100px !important;
 
           .article-introduction {
             .for-cta {
@@ -119,39 +123,32 @@
 
   .lead-counter {
     display: block;
-    text-align: center;
     max-width: 810px;
     margin: 0 auto;
 
     h2 {
       @include font-family(CanelaLight);
-      font-size: 30px;
-      line-height: 50px;
+      font-size: 20px;
+      line-height: 40px;
       color: #000000;
       letter-spacing: 0;
-      text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 14px;
 
-      @include breakpoint(large) {
-        font-size: 40px;
-        line-height: 70px;
+      @media (min-width: 500px) {
+        font-size: 30px;
+        line-height: 50px;
       }
 
       .counter {
-        display: block;
         @include font-family(CanelaRegular);
-        font-size: 80px;
-        line-height: 1.1;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
         color: color(yellow);
-        letter-spacing: 0;
-        text-align: center;
 
-        @include breakpoint(medium) {
-          font-size: 120px;
-        }
-
-        @include breakpoint(large) {
-          font-size: 200px;
+        @media (min-width: 500px) {
+          font-size: 45px;
+          line-height: 50px;
         }
       }
     }
@@ -174,7 +171,7 @@
   }
 
   .highlighted {
-    display: block;
+    display: none;
     text-align: center;
     max-width: 810px;
     margin: 0 auto;
@@ -280,28 +277,28 @@
     .btn-action {
       display: inline-block;
       vertical-align: top;
-      height: 60px;
+      height: 46px;
       line-height: 60px;
       border-radius: 40px;
       background: color(yellow);
       box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
-      padding: 0 20px;
+      padding: 14px;
       @include font-family(CanelaRegular);
-      font-size: 20px;
+      font-size: 14px;
       color: #ffffff;
       letter-spacing: 0;
       margin: 0 0 10px 0;
       width: 100%;
       text-align: center;
 
-      @include breakpoint(medium) {
-        margin: 0 10px 10px 10px;
-        width: auto;
-        padding: 0 30px;
-      }
+      // @include breakpoint(medium) {
+      //   margin: 0 10px 10px 10px;
+      //   width: auto;
+      //   padding: 0 30px;
+      // }
 
       @include breakpoint(large) {
-        height: 66px;
+        height: 46px;
         line-height: 66px;
         margin: 0;
         padding: 0;

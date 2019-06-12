@@ -1,10 +1,140 @@
+.btn-social,
+.btn-action {
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 40px;
+  background: color(yellow);
+  padding: 0 40px 0 20px;
+  @include font-family(CanelaRegular);
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    margin: 0 10px 10px 10px;
+    width: auto;
+    padding: 0 30px;
+  }
+
+  @include breakpoint(large) {
+    height: 66px;
+    line-height: 66px;
+    margin: 0;
+    padding: 0;
+    width: 32%;
+    text-align: center;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: color(yellow-light);
+  }
+
+  &.facebook {
+    i {
+      background-image: url("../images/ico-facebook.svg");
+    }
+  }
+  &.twitter {
+    i {
+      background-image: url("../images/ico-twitter.svg");
+    }
+  }
+  &.email {
+    i {
+      background-image: url("../images/ico-email.svg");
+    }
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0 30px;
+  }
+}
+
+.social {
+  background: #daa900;
+  box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 39.5px;
+  font-family: Canela-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 37px;
+  border: 0 solid #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  padding: 5px 10px;
+
+  @include breakpoint(small) {
+    width: 120px;
+  }
+
+  &.twitter {
+    i {
+      background-image: url("../images/ico-twitter.svg");
+    }
+  }
+  &.email {
+    i {
+      background-image: url("../images/ico-email.svg");
+    }
+  }
+  i {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.btn-action {
+  @media (max-width: 320px) {
+    padding: 20px 0px;
+    height: auto;
+    line-height: 26px;
+  }
+
+  @include breakpoint(large) {
+    height: 66px;
+    line-height: 66px;
+    padding: 0 50px;
+    width: auto;
+  }
+}
 .article-introduction {
   .article-content {
     max-width: 450px;
     position: relative;
 
+    @include breakpoint(small) {
+      margin: 0 -10px 0 -10px;
+    }
+
     .title {
       margin-bottom: 40px;
+      line-height: 40px;
+      font-size: 20px;
+
+      @include breakpoint(medium) {
+        font-size: 30px;
+        line-height: 50px;
+      }
     }
 
     p {
@@ -26,22 +156,60 @@
         text-transform: uppercase;
       }
     }
+
+    .first-cta {
+      margin-bottom: 55px;
+
+      @include breakpoint(medium) {
+        width: 90%;
+      }
+
+      .cta-heading {
+        @include font-family(PostGroteskBook);
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 26px;
+
+        @media (min-width: 500px) {
+          font-size: 17px;
+          margin-top: 26px;
+        }
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (min-width: 500px) {
+          min-width: 300px;
+          justify-content: space-between;
+          width: 75%;
+        }
+      }
+    }
+
+    .story-paragraph {
+      margin-bottom: 30px;
+    }
+
+    .paragraph-heading {
+      color: color(yellow);
+      @include font-family(PostGroteskMedium);
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 20px;
+
+      @include breakpoint(small) {
+        font-size: 20px;
+      }
+    }
   }
 
   .article-image {
-    margin: 30px 0 0 0;
-    padding: 0;
-
-    @include breakpoint(medium) {
-      margin: 0;
-    }
-
-    img {
-      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
-    }
+    margin: -20px -30px 20px -30px;
 
     figcaption {
-      padding: 20px 0 0 0;
       display: block;
       opacity: 0.6;
       @include font-family(PostGroteskLight);
@@ -50,6 +218,15 @@
       color: #000000;
       letter-spacing: 0;
       text-align: right;
+    }
+
+    @media (min-width: 768px) {
+      margin-left: -20px 0 0 0;
+      max-width: 534px;
+    }
+
+    img {
+      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
     }
   }
   .btn-action {
@@ -124,6 +301,128 @@
     &:focus {
       background-color: color(yellow);
       color: white;
+    }
+  }
+}
+
+.display-small-screens-only {
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.display-large-screens-only {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.bottom-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.bottom-banner {
+  display: none;
+  background: #daa900;
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.5);
+  padding: 35px;
+  margin: 20px 50px 0px 50px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-heading {
+    font-family: Canela-Medium;
+    font-size: 31px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .banner-content {
+    font-family: PostGrotesk-Book;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 50%;
+  }
+
+  .button-banner-container {
+    display: flex;
+    justify-content: center;
+
+    .social {
+      background: white;
+      box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
+      border-radius: 39.5px;
+      font-family: Canela-Regular;
+      font-size: 25px;
+      color: #daa900;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 37px;
+      border: 0 solid #ffffff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 20vw;
+      max-width: 240px;
+      padding: 15px 30px;
+      margin: 0 20px;
+
+      &.twitter {
+        i {
+          background-image: url("../images/ico-twitter-yellow.svg");
+        }
+      }
+      &.email {
+        i {
+          background-image: url("../images/ico-email-yellow.svg");
+        }
+      }
+      i {
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  @include font-family(CanelaRegular);
+  font-size: 15px;
+  color: color(yellow);
+  margin-top: 30px;
+
+  @include breakpoint(medium) {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+
+  a {
+    color: color(yellow);
+
+    @include breakpoint(medium) {
+      padding: 0 20px;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

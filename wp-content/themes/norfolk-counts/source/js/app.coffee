@@ -106,7 +106,7 @@ class Theme
         setTimeout ->
           $(elem).fadeOut 100
           resolve()
-        , 2800
+        , 1500
       , delay
 
 
