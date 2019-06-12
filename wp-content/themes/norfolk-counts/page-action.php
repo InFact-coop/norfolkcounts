@@ -1,4 +1,4 @@
-<section class="section-action">
+<section class="section-action" data-log-ga data-ga-category="view-action-page" data-ga-action="view" data-ga-label="Action Page View" data-fb-event="ViewAction">
   <div class="row">
     <div class="small-12 columns">
       <h1>Norfolk Needs You</h1>
@@ -43,49 +43,21 @@
       </div>
     </div>
     <div class="tc">
-      <button
-        data-open="doGooderModal"
-        type="button"
-        name="button"
-        data-log-ga
-        data-ga-category="email-button"
-        data-ga-action="click"
-        data-ga-label="Email"
-        data-fb-event="CompleteAction"
-        data-fb-event-name="Email"
-        class="btn-action active begin pointer"
-      >
-        Email
+      <button data-open="doGooderModal" type="button" name="button" data-log-ga data-ga-category="action-email-mp" data-ga-action="click" data-ga-label="Email MP Action Page" data-fb-event="TakeAction" data-fb-event-name="Email MP" class="social active begin pointer email"><i></i>Email
       </button>
 
-      <button
-        type="button"
-        name="button"
-        class="btn-action active begin pointer"
-      >
-        Tweet
-      </button>
+      <a href="https://ctt.ac/2ffE2" target="_blank" data-log-ga data-ga-category="action-tweet-mp" data-ga-action="click" data-ga-label="Tweet MP Action Page" data-fb-event="TakeAction" data-fb-event-name="Tweet MP" data-link-out="https://ctt.ac/2ffE2">
+        <button type="button" name="button" class="social active begin pointer twitter"><i></i>
+          Tweet
+        </button>
+      </a>
     </div>
 
     <div class="small-12 columns text-center">
       <p class="footer">
-        <a
-          data-open="aboutModal"
-          data-log-ga
-          data-ga-category="action-about-us-button"
-          data-ga-action="click"
-          data-ga-label="About us Action Page"
-          >About us</a
-        >
+        <a data-open="aboutModal" data-log-ga data-ga-category="action-about-us-button" data-ga-action="click" data-ga-label="About us Action Page">About us</a>
         /
-        <a
-          data-open="impactModal"
-          data-log-ga
-          data-ga-category="action-impact-button"
-          data-ga-action="click"
-          data-ga-label="How we know Norfolk's impact Action Page"
-          >How we know Norfolk's impact?</a
-        >
+        <a data-open="impactModal" data-log-ga data-ga-category="action-impact-button" data-ga-action="click" data-ga-label="How we know Norfolk's impact Action Page">How we know Norfolk's impact?</a>
       </p>
     </div>
   </div>
