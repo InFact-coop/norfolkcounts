@@ -221,12 +221,8 @@
     }
 
     @media (min-width: 768px) {
-      margin: 30px 0 0 0;
-      padding: 0;
-
-      @include breakpoint(medium) {
-        margin: 42px 0 0 0;
-      }
+      margin-left: -20px 0 0 0;
+      max-width: 534px;
     }
 
     img {
