@@ -120,7 +120,7 @@
   }
 
   .social {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
     background: color(yellow);
     @include font-family(CanelaRegular);
@@ -130,34 +130,37 @@
     box-shadow: 0 11px 50px 0 rgba(0, 0, 0, 0.13);
     border-radius: 39.5px;
     font-family: Canela-Regular;
-    font-size: 25px;
+    font-size: 14px;
     line-height: 37px;
     border: 0 solid #ffffff;
     width: 40vw;
     margin: 0 10px;
+    padding: 5px 15px;
 
     @include breakpoint(medium) {
+      font-size: 21px;
       width: 30vw;
       max-width: 240px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       margin: 0 10px 20px 10px;
     }
 
     @include breakpoint(large) {
       width: 30vw;
+      font-size: 21px;
       max-width: 240px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       margin: 0 20px 20px 20px;
     }
 
     &.twitter {
       i {
-        background-image: url("../../images/ico-twitter-yellow.svg");
+        background-image: url("../images/ico-twitter.svg");
       }
     }
     &.email {
       i {
-        background-image: url("../../images/ico-email-yellow.svg");
+        background-image: url("../images/ico-email.svg");
       }
     }
     i {
