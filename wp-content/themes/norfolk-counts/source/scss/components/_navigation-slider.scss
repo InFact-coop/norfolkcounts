@@ -6,19 +6,23 @@
   right: 0;
   margin: 0 auto;
   z-index: 1000;
+  display: none;
 
   @include breakpoint(medium) {
     width: 80%;
+    display: inline-block;
   }
 
   @include breakpoint(large) {
     width: 90%;
     top: 120px;
+    display: inline-block;
   }
 
   @include breakpoint(xlarge) {
     width: 70%;
     max-width: $global-width;
+    display: inline-block;
   }
 
   // .slick-track {
