@@ -1,49 +1,26 @@
-<div
-  class="reveal doGooderModal"
-  id="doGooderModal"
-  data-reveal
-  data-close-on-click="true"
-  data-animation-in="fade-in"
-  data-animation-out="fade-out"
->
+<div class="reveal doGooderModal" id="doGooderModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
 
   <div class="tc">
-    <iframe
-      id="dogooder"
-      allowTransparency="true"
-      style="box-sizing:border-box; min-width:300px; width:550px; max-width:100%;"
-      src="https://norfolkcounts1.good.do/takeaction/norfolkcounts/?embedded="
-      scrolling="no"
-      frameborder="0"
-      ><p>
+    <iframe id="dogooder" allowTransparency="true" style="box-sizing:border-box; min-width:300px; width:550px; max-width:100%;" src="https://norfolkcounts1.good.do/takeaction/norfolkcounts/?embedded=" scrolling="no" frameborder="0">
+      <p>
         Your browser does not support iframes. Please visit
-        <a href="https://norfolkcounts1.good.do/takeaction/norfolkcounts/"
-          >https://norfolkcounts1.good.do/takeaction/norfolkcounts/</a
-        >
-      </p></iframe
-    ><script>
+        <a href="https://norfolkcounts1.good.do/takeaction/norfolkcounts/">https://norfolkcounts1.good.do/takeaction/norfolkcounts/</a>
+      </p>
+    </iframe>
+    <script>
       if (!window.jQuery) {
         document.write(
           '<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"><\/script>'
         );
-      }</script
-    ><script
-      type="text/javascript"
-      src="//static.good.do/static/js/jquery.iframeResizer.7d04fe8f6f93.js"
-    ></script
-    ><script type="text/javascript" src="//static.good.do/embed.js"></script>
+      }
+    </script>
+    <script type="text/javascript" src="//static.good.do/static/js/jquery.iframeResizer.7d04fe8f6f93.js"></script>
+    <script type="text/javascript" src="//static.good.do/embed.js"></script>
   </div>
 </div>
 
-<div
-  class="reveal"
-  id="aboutModal"
-  data-reveal
-  data-close-on-click="true"
-  data-animation-in="fade-in"
-  data-animation-out="fade-out"
->
+<div class="reveal" id="aboutModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
 
   <div class="text-center">
@@ -54,22 +31,14 @@
       some of the world’s most vulnerable people.
     </p>
     <p>
-      We believe in the power of one individual to change the world. We hope
-      that this tool helps the people of Norfolk take pride in the impact they
+      We hope that this tool helps the people of Norfolk take pride in the impact they
       have across the globe.
     </p>
     <a class="button" data-close>Close Window</a>
   </div>
 </div>
 
-<div
-  class="reveal"
-  id="impactModal"
-  data-reveal
-  data-close-on-click="true"
-  data-animation-in="fade-in"
-  data-animation-out="fade-out"
->
+<div class="reveal" id="impactModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
 
   <div class="reveal-content text-center">
@@ -120,14 +89,7 @@
   </div>
 </div>
 
-<div
-  class="reveal"
-  id="mpModal"
-  data-reveal
-  data-close-on-click="true"
-  data-animation-in="fade-in"
-  data-animation-out="fade-out"
->
+<div class="reveal" id="mpModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
 
   <h1>What should you tell them?</h1>

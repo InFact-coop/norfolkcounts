@@ -1,7 +1,7 @@
 <section class="section-action" data-log-ga data-ga-category="view-action-page" data-ga-action="view" data-ga-label="Action Page View" data-fb-event="ViewAction">
   <div class="row">
     <div class="small-12 columns">
-      <h1>Norfolk Needs You</h1>
+      <h1>The people of Norfolk have done something amazing</h1>
     </div>
 
     <div class="small-12 medium-4 columns text-center action-highlight">
@@ -31,7 +31,7 @@
     <div class="small-12 columns text-center">
       <div class="block-content">
         <p>
-          With their contribution to UK aid, Norfolk has helped people all
+          Norfolk contributed 1.05% of the total UK aid budget last year. With their contribution to UK aid, Norfolk has helped people all
           around the world. It’s essential this work is allowed to continue.
         </p>
         <p>
