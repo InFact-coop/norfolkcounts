@@ -166,13 +166,13 @@
 
       .cta-heading {
         @include font-family(PostGroteskBook);
-        font-size: 17px;
+        font-size: 14px;
         line-height: 28px;
         margin-bottom: 26px;
-        font-weight: bold;
 
-        @include breakpoint(small) {
-          font-size: 14px;
+        @media (min-width: 500px) {
+          font-size: 17px;
+          margin-top: 26px;
         }
       }
 
@@ -181,8 +181,10 @@
         justify-content: space-around;
         align-items: center;
 
-        @include breakpoint(medium) {
+        @media (min-width: 500px) {
           min-width: 300px;
+          justify-content: space-between;
+          width: 75%;
         }
       }
     }
@@ -308,13 +310,13 @@
 }
 
 .display-small-screens-only {
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
     display: none;
   }
 }
 
 .display-large-screens-only {
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -322,7 +324,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 0px 20px;
 
   @media (min-width: 768px) {
     display: none;
@@ -333,7 +335,7 @@
   display: none;
   background: #daa900;
   box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.5);
-  padding: 30px;
+  padding: 35px;
   margin: 20px 50px 0px 50px;
 
   @media (min-width: 768px) {
@@ -357,6 +359,7 @@
     color: #ffffff;
     letter-spacing: 0;
     text-align: center;
+    margin-bottom: 30px;
     width: 50%;
   }
 
@@ -378,7 +381,8 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 240px;
+      width: 20vw;
+      max-width: 240px;
       padding: 15px 30px;
       margin: 0 20px;
 
@@ -398,6 +402,31 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  @include font-family(CanelaRegular);
+  font-size: 15px;
+  color: color(yellow);
+  margin-top: 30px;
+
+  @include breakpoint(medium) {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+
+  a {
+    color: color(yellow);
+
+    @include breakpoint(medium) {
+      padding: 0 20px;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

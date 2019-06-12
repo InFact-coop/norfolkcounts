@@ -23,8 +23,9 @@ body {
   color: color(yellow);
   letter-spacing: 0;
   margin-bottom: 14px;
-  font-weight: medium;
   text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
 
   @include breakpoint(large) {
     font-size: 17px;

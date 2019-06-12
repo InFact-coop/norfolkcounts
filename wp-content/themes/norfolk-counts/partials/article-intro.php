@@ -101,4 +101,10 @@ $fields = get_fields($post->ID);
       </div>
 </div>
 
+  <p class="footer">
+    <a data-open="aboutModal" data-log-ga data-ga-category="about-us-button" data-ga-action="click" data-ga-label="About us Action Page">About us</a>
+    /
+    <a data-open="impactModal" data-log-ga data-ga-category="impact-button" data-ga-action="click" data-ga-label="How we know Norfolk's impact Action Page">How we know Norfolk's impact?</a>
+  </p>
+
 <!-- //Introduction -->
