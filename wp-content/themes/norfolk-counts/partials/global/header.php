@@ -6,7 +6,14 @@
   <div class="row">
     <div class="small-12 columns">
 
-      <a href="/" class="logo"></a>
+      <a href="/" class="logo" data-log-ga
+      data-ga-category="<?= is_page('action')
+        ? "action-home"
+        : "home" ?>"
+      data-ga-action="click"
+      data-ga-label="<?= is_page('action')
+        ? "Direct to Tool"
+        : "Restart tool" ?>"></a>
 
       <a href="<?= facebook_link() ?>" class="share" data-log-ga
       data-ga-category="<?= is_page('action')

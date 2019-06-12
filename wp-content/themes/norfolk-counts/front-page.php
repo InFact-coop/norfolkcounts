@@ -5,7 +5,12 @@ $stories = get_all_stories();
 <!-- STEPS CONTENT -->
 <section class="steps-container">
   <!-- Step #0 -->
-  <div class="step step-0">
+  <div 
+  class="step step-0"
+  data-log-ga
+  data-ga-category="view-tool"
+  data-ga-action="view"
+  data-ga-label="View landing page of tool">
     <div class="row">
       <div class="small-12 columns text-center">
         <img
@@ -175,13 +180,13 @@ $stories = get_all_stories();
   <!-- //Slider -->
 
   <!-- Slider -->
-  <div class="landing-slider">
+  <!-- <div class="landing-slider">
     <div class="row expanded collapse">
       <div class="small-12 columns">
-        <div id="other-stories" class="header-slider"></div>
+       <div id="other-stories" class="header-slider"></div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- //Slider -->
 </section>
 <!-- LANDING PAGE -->
