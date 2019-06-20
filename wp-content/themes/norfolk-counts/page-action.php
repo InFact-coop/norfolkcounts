@@ -1,8 +1,9 @@
 <section class="section-action" data-log-ga data-ga-category="view-action-page" data-ga-action="view" data-ga-label="Action Page View" data-fb-event="ViewAction">
-  <div class="row">
+  <div class="row stats-container">
     <div class="small-12 columns">
       <h1>The people of Norfolk have done something amazing</h1>
     </div>
+
 
     <div class="small-12 medium-4 columns text-center action-highlight">
       <p>
@@ -53,7 +54,7 @@
       </a>
     </div>
 
-    <div class="small-12 columns text-center">
+    <div class="text-center">
       <p class="footer">
         <a data-open="aboutModal" data-log-ga data-ga-category="action-about-us-button" data-ga-action="click" data-ga-label="About us Action Page">About us</a>
         /
