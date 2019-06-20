@@ -65,7 +65,7 @@ class Theme
         'event_callback': cb
 
   preload_main: (first_story)=>
-    promises = (@transition_message( 3000 * i, message ) for message, i in @messages)
+    promises = (@transition_message( 4000 * i, message ) for message, i in @messages)
     promises.push @load_carousel( first_story )
     Promise.all promises
     .then @show_landing
@@ -106,7 +106,7 @@ class Theme
         setTimeout ->
           $(elem).fadeOut 100
           resolve()
-        , 1500
+        , 2500
       , delay
 
 
