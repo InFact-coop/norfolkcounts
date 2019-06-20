@@ -25,16 +25,38 @@
       }
     }
 
+    .move-link {
+      display: inline-block;
+      color: color(yellow);
+      border-bottom: 1px solid;
+      @include font-family(CanelaRegular);
+      font-size: 26px;
+      line-height: 20px;
+      letter-spacing: -0.34px;
+      margin-bottom: 20px;
+
+      @include breakpoint(medium) {
+        font-size: 50px;
+        line-height: 37px;
+        border-bottom: 2px solid;
+      }
+    }
+
     .img-house {
-      max-width: 75%;
+      width: 100%;
       display: block;
       margin: 0 auto;
-      margin-bottom: 40px;
       margin-top: 40px;
 
       @include breakpoint(medium) {
+        width: 100%;
+      }
+
+      @include breakpoint(large) {
+        width: 80%;
         max-width: 100%;
-        margin-top: 0px;
+        margin-top: -20px;
+        margin-bottom: -40px;
       }
     }
 
