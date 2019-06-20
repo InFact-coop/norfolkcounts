@@ -1,7 +1,7 @@
 <div class="reveal doGooderModal" id="doGooderModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
   <a class="close-button" data-close>Close</a>
 
-  <div class="tc">
+  <div class="tc scroll-wrapper">
     <iframe id="dogooder" allowTransparency="true" style="box-sizing:border-box; min-width:300px; width:550px; max-width:100%;" src="https://norfolkcounts1.good.do/takeaction/norfolkcounts/?embedded=" scrolling="no" frameborder="0">
       <p>
         Your browser does not support iframes. Please visit
