@@ -9,7 +9,7 @@ shuffle($stories);
   <div class="step step-0" data-log-ga data-ga-category="view-tool" data-ga-action="view" data-ga-label="View landing page of tool">
     <div class="row">
       <div class="small-12 columns text-center">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-windmill.svg" alt="" class="img-house" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-windmill.gif" alt="" class="img-house" />
         <h1><?= get_bloginfo('name') ?></h1>
         <?php the_content(); ?>
 

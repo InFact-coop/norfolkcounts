@@ -43,15 +43,20 @@
     }
 
     .img-house {
-      max-width: 75%;
+      width: 100%;
       display: block;
       margin: 0 auto;
-      margin-bottom: 40px;
       margin-top: 40px;
 
       @include breakpoint(medium) {
+        width: 100%;
+      }
+
+      @include breakpoint(large) {
+        width: 80%;
         max-width: 100%;
-        margin-top: 0px;
+        margin-top: -20px;
+        margin-bottom: -40px;
       }
     }
 
