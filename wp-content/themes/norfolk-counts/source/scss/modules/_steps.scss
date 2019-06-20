@@ -25,6 +25,23 @@
       }
     }
 
+    .move-link {
+      display: inline-block;
+      color: color(yellow);
+      border-bottom: 1px solid;
+      @include font-family(CanelaRegular);
+      font-size: 26px;
+      line-height: 20px;
+      letter-spacing: -0.34px;
+      margin-bottom: 20px;
+
+      @include breakpoint(medium) {
+        font-size: 50px;
+        line-height: 37px;
+        border-bottom: 2px solid;
+      }
+    }
+
     .img-house {
       max-width: 75%;
       display: block;
