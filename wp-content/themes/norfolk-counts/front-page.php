@@ -45,37 +45,37 @@ shuffle($stories);
 
         </h2>
         <div style="display:block;"> <a class="move-link" href="<?= $fields['step_1']['no_answer_link']['url'] ?>" data-log-ga data-ga-category="metro-link" data-ga-action="click" data-ga-label="Clicked 'reasons to move'" data-link-out="<?= $fields['step_1']['no_answer_link']['url'] ?>" target="_blank"><?= $fields['step_1']['no_answer_link']['title'] ?></a>
-          <div>
-            <p>
-              And, if you need yet another reason...
-            </p>
-
-            <a href="#" class="btn-action light large" data-log-ga data-ga-category="norfolk-is-proud" data-ga-action="click" data-ga-label="Clicked 'why norfolk is proud'" data-go-step="2"><?= $fields['step_1']['no_answer_cta'] ?></a>
-          </div>
         </div>
+        <p>
+          And, if you need yet another reason...
+        </p>
+
+        <a href="#" class="btn-action light large" data-log-ga data-ga-category="norfolk-is-proud" data-ga-action="click" data-ga-label="Clicked 'why norfolk is proud'" data-go-step="2"><?= $fields['step_1']['no_answer_cta'] ?></a>
       </div>
-      <!-- Step #1 -->
+    </div>
+  </div>
+  <!-- Step #1 -->
 
-      <!-- Step #2 -->
-      <div class="step step-2">
-        <div class="row">
-          <div class="small-12 columns text-center">
-            <span class="progress complete">Step 2/2</span>
+  <!-- Step #2 -->
+  <div class="step step-2">
+    <div class="row">
+      <div class="small-12 columns text-center">
+        <span class="progress complete">Step 2/2</span>
 
-            <h2><?= $fields['step_2']['step_2_main_text'] ?></h2>
-            <p><?= $fields['step_2']['step_2_sub_text'] ?></p>
+        <h2><?= $fields['step_2']['step_2_main_text'] ?></h2>
+        <p><?= $fields['step_2']['step_2_sub_text'] ?></p>
 
-            <ul class="option-list">
-              <?php foreach ($stories as $post) : ?>
-                <li>
-                  <a href="#" data-log-ga data-ga-category="stories" data-ga-action="view" data-ga-label="<?= esc_attr($post->post_title) ?>" data-fb-event="ViewContent" data-fb-event-name="<?= esc_attr($post->post_title) ?>" class="btn-action" data-go-step="transition" data-first-story="<?= $post->ID ?>"><?= $post->post_title ?></a>
-                </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-        </div>
+        <ul class="option-list">
+          <?php foreach ($stories as $post) : ?>
+            <li>
+              <a href="#" data-log-ga data-ga-category="stories" data-ga-action="view" data-ga-label="<?= esc_attr($post->post_title) ?>" data-fb-event="ViewContent" data-fb-event-name="<?= esc_attr($post->post_title) ?>" class="btn-action" data-go-step="transition" data-first-story="<?= $post->ID ?>"><?= $post->post_title ?></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
       </div>
-      <!-- Step #2 -->
+    </div>
+  </div>
+  <!-- Step #2 -->
 </section>
 <!-- STEPS CONTENT -->
 
