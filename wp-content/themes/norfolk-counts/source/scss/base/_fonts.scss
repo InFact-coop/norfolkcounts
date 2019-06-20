@@ -4,57 +4,57 @@
 
 @font-face {
   font-family: "Canela-Bold";
-  src: url("../fonts/Canela-Bold.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/Canela-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Canela-Regular";
-  src: url("../fonts/Canela-Regular.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/Canela-Regular.otf") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Canela-Light";
-  src: url("../fonts/Canela-Light.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/Canela-Light.otf") format("opentype");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Canela-LightItalic";
-  src: url("../fonts/Canela-LightItalic.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/Canela-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "PostGrotesk-Bold";
-  src: url("../fonts/PostGrotesk-Bold.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/PostGrotesk-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PostGrotesk-Light";
-  src: url("../fonts/PostGrotesk-Light.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/PostGrotesk-Light.otf") format("opentype");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PostGrotesk-Book";
-  src: url("../fonts/PostGrotesk-Book.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/PostGrotesk-Book.otf") format("opentype");
+  font-weight: 350;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PostGrotesk-Medium";
-  src: url("../fonts/PostGrotesk-Medium.otf") format("otf");
-  font-weight: normal;
+  src: url("../fonts/PostGrotesk-Medium.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -118,9 +118,9 @@
     font-weight: 500;
   }
   @if $weight == bold {
-    font-weight: 600;
+    font-weight: 700;
   }
   @if $weight == extra-bold {
-    font-weight: 900;
+    font-weight: 800;
   }
 }
