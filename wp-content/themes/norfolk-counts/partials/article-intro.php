@@ -22,24 +22,9 @@ $fields = get_fields($post->ID);
             <?= $fields['stats_section'] ?>
           </div>
 
-          <div class="first-cta">
-            <div class="cta-heading">Ask Liz Truss to protect Norfolk's Aid contributions.</div>
-            <div class="cta-buttons">
-              <?php wp_reset_postdata(); ?>
-              <button data-open="doGooderModal" type="button" name="button" data-log-ga data-ga-category="email-button" data-ga-action="click" data-ga-label="Email" data-fb-event="CompleteAction" data-fb-event-name="Email" class="social active begin pointer email"><i></i> Email
-              </button>
-
-              <a href="https://ctt.ac/2ffE2" target="_blank" data-log-ga data-ga-category="tweet-mp-button" data-ga-action="click" data-ga-label="Tweet MP" data-fb-event="CompleteAction" data-fb-event-name="Tweet MP" data-link-out="https://ctt.ac/2ffE2">
-                <button type="button" name="button" class="social active begin pointer twitter"><i></i>
-                  Tweet
-                </button>
-
-              </a>
-            </div>
-          </div>
 
           <div class="small-12 medium-6 columns display-small-screens-only">
-            <figure class="article-image">
+            <figure class="article-image" style="margin-top:20px">
               <img src="<?= get_featured_image_src() ?>" alt="<?php esc_attr_e($post->post_title); ?>" />
               <figcaption>
                 Credit:
@@ -101,10 +86,10 @@ $fields = get_fields($post->ID);
       </div>
 </div>
 
-  <p class="footer">
-    <a data-open="aboutModal" data-log-ga data-ga-category="about-us-button" data-ga-action="click" data-ga-label="About us Action Page">About us</a>
-    /
-    <a data-open="impactModal" data-log-ga data-ga-category="impact-button" data-ga-action="click" data-ga-label="How we know Norfolk's impact Action Page">How we know Norfolk's impact?</a>
-  </p>
+<p class="footer">
+  <a data-open="aboutModal" data-log-ga data-ga-category="about-us-button" data-ga-action="click" data-ga-label="About us Action Page">About us</a>
+  /
+  <a data-open="impactModal" data-log-ga data-ga-category="impact-button" data-ga-action="click" data-ga-label="How we know Norfolk's impact Action Page">How we know Norfolk's impact?</a>
+</p>
 
 <!-- //Introduction -->
