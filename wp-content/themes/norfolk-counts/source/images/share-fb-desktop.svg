@@ -7,7 +7,7 @@
                     <text id="Share-with-friends" font-family="Canela-Bold, Canela" font-size="20" font-weight="bold" line-spacing="26" fill="#DAA900">
                         <tspan x="56.9" y="20">Share with friends</tspan>
                     </text>
-                    <path d="M220,26.5 L57,26.5" id="Line" stroke="#DAA900" stroke-linecap="square"></path>
+                    <path d="M215,25.5 L57,25.5" id="Line" stroke="#DAA900" stroke-linecap="square"></path>
                 </g>
             </g>
         </g>
