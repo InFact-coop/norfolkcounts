@@ -27,7 +27,7 @@
     "foundation-sites": "^6.5.0-rc.2",
     "imagemin-webpack-plugin": "^2.2.0",
     "motion-ui": "~1.2.3",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "paroller.js": "^1.4.4",
     "path": "^0.12.7",
     "postcss-loader": "^2.1.6",
